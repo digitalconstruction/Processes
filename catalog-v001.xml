@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Information" uri="https://w3id.org/digitalconstruction/Information#"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Agents" uri="https://w3id.org/digitalconstruction/Agents#"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Entities#" uri="https://w3id.org/digitalconstruction/Entities#"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Entities#" uri="file:/Users/sto/ontologies/digitalconstruction/Entities/Entities.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/1.0.0" uri="file:/Users/sto/ontologies/digitalconstruction/Entities/Entities.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>
