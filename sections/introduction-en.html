@@ -44,20 +44,20 @@ however, restricted by a set of constraints. The constraints can restrict the mu
 conditions and effects of activities, as shown in the following figure: </p>
 
 <center>
-<img src="transport1-example.png" alt="An example of the variables and constraints of a transportation activity"
-height="360">
+<img src="sections/transport1-example.png" alt="An example of the variables and constraints of a transportation activity"
+height="400">
 </center>
 
-<p> The figure shows that the activity <pre>transport1</pre> is of type <pre>Transport</pre> and have relation
-<pre>occupies interval</pre> with a <pre>time:Interval</pre>. The activity has a set of variable properties:
-<pre>hasActor</pre>, <pre>hasObject</pre>, <pre>hasEquipment</pre>, <pre>hasOrigin</pre>, and <pre>hasTarget</pre>. The
-time interval has two variable properties: <pre>hasBeginning</pre> and <pre>hasEnd</pre>. The possible values of these
+<p> The figure shows that the activity <em>transport1</em> is of type <em>Transport</em> and have relation
+<em>occupies interval</em> with a <em>time:Interval</em>. The activity has a set of variable properties:
+<em>hasActor</em>, <em>hasObject</em>, <em>hasEquipment</em>, <em>hasOrigin</em>, and <em>hasTarget</em>. The
+time interval has two variable properties: <em>hasBeginning</em> and <em>hasEnd</em>. The possible values of these
 variables are restricted by a set of constraints. The actors are restricted to those with the capability of driving
-(<pre>CapabiityRequirement</pre> constraint), the vehicle is restricted to one that has sufficient load carrying
-capacity (<pre>LoadCarryingCapacity</pre> constraint), and the origin and target of transportation have to be different
-locations (<pre>DifferentValue</pre> constraint). The mutual values of beginning and end of the interval are also
-restricted by a <pre>MinTemporalDistance</pre> constraint, based on the duration to drive from origin to target. The
-activity <pre>transport1</pre> is also related to a number of <pre>StateConstraint</pre>. They have been organized in
+(<em>CapabiityRequirement</em> constraint), the vehicle is restricted to one that has sufficient load carrying
+capacity (<em>LoadCarryingCapacity</em> constraint), and the origin and target of transportation have to be different
+locations (<em>DifferentValue</em> constraint). The mutual values of beginning and end of the interval are also
+restricted by a <em>MinTemporalDistance</em> constraint, based on the duration to drive from origin to target. The
+activity <em>transport1</em> is also related to a number of <em>StateConstraint</em>. They have been organized in
 the figure into three different groups: the conditions that need to hold at the start of the activity, the conditions
 that need to hold during its exexution, and the effects that will hold in the end of the activity.  </p>. 
 
