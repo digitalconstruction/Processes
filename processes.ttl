@@ -8,14 +8,55 @@
 @base <http://w3id.org/digitalconstruction/Processes> .
 
 <http://w3id.org/digitalconstruction/Processes> rdf:type owl:Ontology ;
-                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ,
-                                                             <http://www.w3.org/2006/time#2016> ,
-                                                             <https://w3id.org/digitalconstruction/Agents> ,
-                                                             <https://w3id.org/digitalconstruction/Information> ,
-                                                             <https://w3id.org/digitalconstruction/Entities#> ;
-                                                 <http://purl.org/dc/elements/1.1/creator> "Seppo Törmä (seppo.torma@visualynk.com)" ,
-                                                                                           "Yuan Zheng (yuan.zheng@aalto.fi)" ;
-                                                 rdfs:label "Workflow process ontology for digital construction" .
+    owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> , <http://www.w3.org/2006/time#2016> , <https://w3id.org/digitalconstruction/Agents> , <https://w3id.org/digitalconstruction/Information> , <https://w3id.org/digitalconstruction/Entities#> ;
+    <http://purl.org/dc/elements/1.1/creator> "Seppo Törmä (seppo.torma@visualynk.com)" , "Yuan Zheng (yuan.zheng@aalto.fi)" ;
+    <http://purl.org/dc/elements/1.1/date> "2019-12-20" ;
+    <http://purl.org/dc/elements/1.1/title> "Digital construction - Processes" ;
+    <http://purl.org/dc/terms/abstract> "Process ontology provides the concepts for the activities and their relationships between different entities (flows). The relationships are represented with variables and constraints. " ;
+    <http://purl.org/dc/terms/created> "2019-12-20" ;
+    <http://purl.org/dc/terms/description> "Process ontology for digital construction" ;
+    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> "pro" ;
+    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Processes" ;
+    rdfs:label "Process ontology for digital construction" ;
+    rdfs:seeAlso <https://w3id.org/digitalconstruction> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 
 #################################################################
 #    Object Properties
