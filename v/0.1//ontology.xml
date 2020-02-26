@@ -1,0 +1,616 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/digitalconstruction/Processes#"
+     xml:base="http://w3id.org/digitalconstruction/Processes"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://w3id.org/digitalconstruction/Processes">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Agents"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Information"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities#"/>
+        <dc:creator>Seppo Törmä (seppo.torma@visualynk.com)</dc:creator>
+        <dc:creator>Yuan Zheng (yuan.zheng@aalto.fi)</dc:creator>
+        <rdfs:label>Workflow process ontology for digital construction</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#belongsToPlan -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#belongsToPlan">
+        <owl:inverseOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasPlanConstraint"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#Plan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasActivity">
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasActor -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasActor">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableResource"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasCondition -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasCondition">
+        <owl:inverseOf rdf:resource="http://w3id.org/digitalconstruction/Processes#isConditionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasConstraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasConstraint">
+        <owl:inverseOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariable"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Variable"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasEffect -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/digitalconstruction/Processes#isEffectOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasEquipment -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasEquipment">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasObject">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Move"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasPlanConstraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasPlanConstraint">
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Plan"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasPlannedConstraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasPlannedConstraint"/>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Move"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasVariable -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasVariable">
+        <owl:inverseOf rdf:resource="http://w3id.org/digitalconstruction/Processes#isConstrainedBy"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasVariable1 -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasVariable1">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasVariable2 -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasVariable2">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasVariableProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasVariableProperty"/>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#hasVariableResource -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#hasVariableResource">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#isConditionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#isConditionOf">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasActivity"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#isConstrainedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#isConstrainedBy">
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#Variable"/>
+        <rdfs:range rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#isEffectOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#isEffectOf">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/digitalconstruction/Processes#hasActivity"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#ActivityGroup -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#ActivityGroup">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Group"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+        <rdfs:comment>A collection of activities, not necessarily having any common purpose</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Adjoin -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Adjoin">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#InverseJoin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#AllOverConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#AllOverConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Approve -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Approve">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#AtEndConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#AtEndConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#AtStartConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#AtStartConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#StateConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#BinaryConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#BinaryConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariable1"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/digitalconstruction/Processes#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/digitalconstruction/Processes#hasVariable2"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/digitalconstruction/Processes#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Capability -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Capability">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#CapabilityConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#CapabilityConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Constraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Constraint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#ConstructionProject -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#ConstructionProject">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#OrganizedProject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#DifferentValue -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#DifferentValue">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#BinaryConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Disjoin -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Disjoin">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#InverseJoin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#InverseJoin -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#InverseJoin">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#LessThan -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#LessThan">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#BinaryConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Move -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Move">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#ObjectActivity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#ObjectActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:comment>An activity focused on some specific object and carried out by an actor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#OrganizedProject -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#OrganizedProject">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#Project"/>
+        <rdfs:comment>A Project carried out by an Organization</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Plan -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Plan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Project -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Project">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+        <rdfs:comment>A ObjectActivity with specific goals</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#RenovationProject -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#RenovationProject">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ConstructionProject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#RestrictValue -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#RestrictValue">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#UnaryConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#SameValue -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#SameValue">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#BinaryConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#StateConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#StateConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Transfer -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Transfer">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Transform -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Transform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Transport -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Transport">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#Move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#UnaryConstraint -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#UnaryConstraint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/digitalconstruction/Processes#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/digitalconstruction/Processes#Variable -->
+
+
+    <owl:Class rdf:about="http://w3id.org/digitalconstruction/Processes#Variable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Entities#Activity -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Entities#Activity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalUnit">
+        <rdfs:comment>An OrganizedProject whose object is a Site</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

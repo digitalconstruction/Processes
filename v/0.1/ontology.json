@@ -1,0 +1,530 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable1"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Variable"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable2"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Variable"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000038"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Seppo Törmä (seppo.torma@visualynk.com)"
+  }, {
+    "@value" : "Yuan Zheng (yuan.zheng@aalto.fi)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2019-12-20"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Digital construction - Processes"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "Process ontology provides the concepts for the activities and their relationships between different entities (flows). The relationships are represented with variables and constraints. "
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2019-12-20"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Process ontology for digital construction"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "pro"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/digitalconstruction/Processes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Process ontology for digital construction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/digitalconstruction"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"
+  }, {
+    "@id" : "http://www.w3.org/2006/time#2016"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Agents"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Information"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#ActivityGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of activities, not necessarily having any common purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Adjoin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#InverseJoin"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#AllOverConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Approve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#AtEndConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#AtStartConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#BinaryConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Capability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000016"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#CapabilityConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#ConstructionProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#OrganizedProject"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#DifferentValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#BinaryConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Disjoin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#InverseJoin"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#InverseJoin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#LessThan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#BinaryConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Move",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An activity focused on some specific object and carried out by an actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#OrganizedProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Project carried out by an Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Project"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Plan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationObject"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A ObjectActivity with specific goals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#RenovationProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ConstructionProject"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#RestrictValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#UnaryConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#SameValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#BinaryConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Transfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Transform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Move"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#UnaryConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#belongsToPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Plan"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasPlanConstraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableResource"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#isConditionOf"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#isEffectOf"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableResource"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableResource"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#ObjectActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableProperty"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableProperty"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasPlanConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasPlannedConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableProperty"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Variable"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#isConstrainedBy"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariable"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasVariableProperty"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#isConditionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasActivity"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#isConstrainedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#Constraint"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#isEffectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#StateConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/digitalconstruction/Processes#hasActivity"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000008"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Instant",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000148"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000038"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000008"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalUnit",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An OrganizedProject whose object is a Site"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Entities#Activity",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+} ]
