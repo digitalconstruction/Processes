@@ -8,7 +8,6 @@
 
 <https://w3id.org/digitalconstruction/Processes> rdf:type owl:Ontology ;
                                                   owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
-                                                              <http://www.w3.org/2006/time#2016> ,
                                                               <https://w3id.org/digitalconstruction/Agents> ,
                                                               <https://w3id.org/digitalconstruction/Entities> ,
                                                               <https://w3id.org/digitalconstruction/Information> ;
@@ -152,15 +151,18 @@
 
 
 ###  http://www.w3.org/2006/time#Instant
-<http://www.w3.org/2006/time#Instant> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000148> .
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000148> .
 
 
 ###  http://www.w3.org/2006/time#Interval
-<http://www.w3.org/2006/time#Interval> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> .
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> .
 
 
 ###  http://www.w3.org/2006/time#TemporalEntity
-<http://www.w3.org/2006/time#TemporalEntity> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000008> .
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000008> .
 
 
 ###  https://w3id.org/digitalconstruction/Entities#Activity
@@ -202,17 +204,20 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#CapabilityConstraint
 :CapabilityConstraint rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#Constraint> .
+                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Variables#Constraint> ;
+                      rdfs:label "CapabilityConstraint" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#Caulking
 :Caulking rdf:type owl:Class ;
-          rdfs:subClassOf :TransformationActivity .
+          rdfs:subClassOf :TransformationActivity ;
+          rdfs:label "Caulking" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#ConcreteCasting
 :ConcreteCasting rdf:type owl:Class ;
-                 rdfs:subClassOf :BuildingActivity .
+                 rdfs:subClassOf :BuildingActivity ;
+                 rdfs:label "ConcreteCasting" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#ConstructionProject
@@ -230,17 +235,20 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#FloorConcreting
 :FloorConcreting rdf:type owl:Class ;
-                 rdfs:subClassOf :TransformationActivity .
+                 rdfs:subClassOf :TransformationActivity ;
+                 rdfs:label "FloorConcreting" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#FloorCovering
 :FloorCovering rdf:type owl:Class ;
-               rdfs:subClassOf :TransformationActivity .
+               rdfs:subClassOf :TransformationActivity ;
+               rdfs:label "FloorCovering" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction
 :IndoorWallConstruction rdf:type owl:Class ;
-                        rdfs:subClassOf :BuildingActivity .
+                        rdfs:subClassOf :BuildingActivity ;
+                        rdfs:label "IndoorWallConstruction" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#Inspect
@@ -265,7 +273,8 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#Jointing
 :Jointing rdf:type owl:Class ;
-          rdfs:subClassOf :TransformationActivity .
+          rdfs:subClassOf :TransformationActivity ;
+          rdfs:label "Jointing" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#Lift
@@ -284,12 +293,14 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#ManagerialActivity
 :ManagerialActivity rdf:type owl:Class ;
-                    rdfs:subClassOf :ObjectActivity .
+                    rdfs:subClassOf :ObjectActivity ;
+                    rdfs:label "ManagerialActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#Masonry
 :Masonry rdf:type owl:Class ;
-         rdfs:subClassOf :TransformationActivity .
+         rdfs:subClassOf :TransformationActivity ;
+         rdfs:label "Masonry" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#MovingActivity
@@ -322,7 +333,8 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#Painting
 :Painting rdf:type owl:Class ;
-          rdfs:subClassOf :TransformationActivity .
+          rdfs:subClassOf :TransformationActivity ;
+          rdfs:label "Painting" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#PlanningActivity
@@ -341,7 +353,8 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#RenovationProject
 :RenovationProject rdf:type owl:Class ;
-                   rdfs:subClassOf :ConstructionProject .
+                   rdfs:subClassOf :ConstructionProject ;
+                   rdfs:label "RenovationProject" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#StationaryActivity
@@ -353,7 +366,8 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#Tiling
 :Tiling rdf:type owl:Class ;
-        rdfs:subClassOf :TransformationActivity .
+        rdfs:subClassOf :TransformationActivity ;
+        rdfs:label "Tiling" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#Transfer
@@ -400,7 +414,8 @@
 
 ###  https://w3id.org/digitalconstruction/Processes#Waterproofing
 :Waterproofing rdf:type owl:Class ;
-               rdfs:subClassOf :TransformationActivity .
+               rdfs:subClassOf :TransformationActivity ;
+               rdfs:label "Waterproofing" .
 
 
 #################################################################

@@ -42,16 +42,19 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2006/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000148"
   } ]
 }, {
   "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000038"
   } ]
 }, {
   "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000008"
   } ]
@@ -105,8 +108,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"
-  }, {
-    "@id" : "http://www.w3.org/2006/time#2016"
   }, {
     "@id" : "https://w3id.org/digitalconstruction/Agents"
   }, {
@@ -170,18 +171,27 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#CapabilityConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CapabilityConstraint"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Variables#Constraint"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#Caulking",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Caulking"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#ConcreteCasting",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ConcreteCasting"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#BuildingActivity"
   } ]
@@ -209,18 +219,27 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#FloorConcreting",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FloorConcreting"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#FloorCovering",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FloorCovering"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IndoorWallConstruction"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#BuildingActivity"
   } ]
@@ -260,6 +279,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#Jointing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jointing"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
@@ -290,12 +312,18 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#ManagerialActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ManagerialActivity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#ObjectActivity"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#Masonry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Masonry"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
@@ -350,6 +378,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#Painting",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Painting"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
@@ -380,6 +411,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#RenovationProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RenovationProject"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#ConstructionProject"
   } ]
@@ -398,6 +432,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#Tiling",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tiling"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]
@@ -476,6 +513,9 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Processes#Waterproofing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Waterproofing"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Processes#TransformationActivity"
   } ]

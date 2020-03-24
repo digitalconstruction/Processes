@@ -1,6 +1,5 @@
 <https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time#2016> .
 <https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Agents> .
 <https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
 <https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Information> .
@@ -135,12 +134,15 @@
 <http://purl.obolibrary.org/obo/BFO_0000148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000148> .
 # 
 # http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000038> .
 # 
 # http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000008> .
 # 
 # https://w3id.org/digitalconstruction/Entities#Activity
@@ -178,14 +180,17 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#CapabilityConstraint
 <https://w3id.org/digitalconstruction/Processes#CapabilityConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#CapabilityConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Variables#Constraint> .
+<https://w3id.org/digitalconstruction/Processes#CapabilityConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "CapabilityConstraint" .
 # 
 # https://w3id.org/digitalconstruction/Processes#Caulking
 <https://w3id.org/digitalconstruction/Processes#Caulking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#Caulking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#Caulking> <http://www.w3.org/2000/01/rdf-schema#label> "Caulking" .
 # 
 # https://w3id.org/digitalconstruction/Processes#ConcreteCasting
 <https://w3id.org/digitalconstruction/Processes#ConcreteCasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#ConcreteCasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#BuildingActivity> .
+<https://w3id.org/digitalconstruction/Processes#ConcreteCasting> <http://www.w3.org/2000/01/rdf-schema#label> "ConcreteCasting" .
 # 
 # https://w3id.org/digitalconstruction/Processes#ConstructionProject
 <https://w3id.org/digitalconstruction/Processes#ConstructionProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -201,14 +206,17 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#FloorConcreting
 <https://w3id.org/digitalconstruction/Processes#FloorConcreting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#FloorConcreting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#FloorConcreting> <http://www.w3.org/2000/01/rdf-schema#label> "FloorConcreting" .
 # 
 # https://w3id.org/digitalconstruction/Processes#FloorCovering
 <https://w3id.org/digitalconstruction/Processes#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#label> "FloorCovering" .
 # 
 # https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction
 <https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#BuildingActivity> .
+<https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "IndoorWallConstruction" .
 # 
 # https://w3id.org/digitalconstruction/Processes#Inspect
 <https://w3id.org/digitalconstruction/Processes#Inspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -230,6 +238,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#Jointing
 <https://w3id.org/digitalconstruction/Processes#Jointing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#Jointing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#Jointing> <http://www.w3.org/2000/01/rdf-schema#label> "Jointing" .
 # 
 # https://w3id.org/digitalconstruction/Processes#Lift
 <https://w3id.org/digitalconstruction/Processes#Lift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -246,10 +255,12 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#ManagerialActivity
 <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/Processes#ManagerialActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ManagerialActivity" .
 # 
 # https://w3id.org/digitalconstruction/Processes#Masonry
 <https://w3id.org/digitalconstruction/Processes#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#Masonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#Masonry> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry" .
 # 
 # https://w3id.org/digitalconstruction/Processes#MovingActivity
 <https://w3id.org/digitalconstruction/Processes#MovingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -278,6 +289,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#Painting
 <https://w3id.org/digitalconstruction/Processes#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#Painting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#Painting> <http://www.w3.org/2000/01/rdf-schema#label> "Painting" .
 # 
 # https://w3id.org/digitalconstruction/Processes#PlanningActivity
 <https://w3id.org/digitalconstruction/Processes#PlanningActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -294,6 +306,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#RenovationProject
 <https://w3id.org/digitalconstruction/Processes#RenovationProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#RenovationProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ConstructionProject> .
+<https://w3id.org/digitalconstruction/Processes#RenovationProject> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationProject" .
 # 
 # https://w3id.org/digitalconstruction/Processes#StationaryActivity
 <https://w3id.org/digitalconstruction/Processes#StationaryActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -304,6 +317,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#Tiling
 <https://w3id.org/digitalconstruction/Processes#Tiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#Tiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#Tiling> <http://www.w3.org/2000/01/rdf-schema#label> "Tiling" .
 # 
 # https://w3id.org/digitalconstruction/Processes#Transfer
 <https://w3id.org/digitalconstruction/Processes#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -344,6 +358,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.o
 # https://w3id.org/digitalconstruction/Processes#Waterproofing
 <https://w3id.org/digitalconstruction/Processes#Waterproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Processes#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/Processes#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Waterproofing" .
 # 
 # 
 # 

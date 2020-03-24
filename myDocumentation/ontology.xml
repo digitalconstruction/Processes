@@ -2,20 +2,15 @@
 <rdf:RDF xmlns="https://w3id.org/digitalconstruction/Processes#"
      xml:base="https://w3id.org/digitalconstruction/Processes"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Processes">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"/>
-        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Agents"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Information"/>
@@ -267,27 +262,27 @@
     <!-- http://www.w3.org/2006/time#Instant -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#Instant">
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/2006/time#Interval -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval">
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/2006/time#TemporalEntity -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -356,6 +351,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#CapabilityConstraint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Variables#Constraint"/>
+        <rdfs:label>CapabilityConstraint</rdfs:label>
     </owl:Class>
     
 
@@ -365,6 +361,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#Caulking">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>Caulking</rdfs:label>
     </owl:Class>
     
 
@@ -374,6 +371,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#ConcreteCasting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#BuildingActivity"/>
+        <rdfs:label>ConcreteCasting</rdfs:label>
     </owl:Class>
     
 
@@ -404,6 +402,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#FloorConcreting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>FloorConcreting</rdfs:label>
     </owl:Class>
     
 
@@ -413,6 +412,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#FloorCovering">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>FloorCovering</rdfs:label>
     </owl:Class>
     
 
@@ -422,6 +422,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#BuildingActivity"/>
+        <rdfs:label>IndoorWallConstruction</rdfs:label>
     </owl:Class>
     
 
@@ -463,6 +464,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#Jointing">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>Jointing</rdfs:label>
     </owl:Class>
     
 
@@ -494,6 +496,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#ManagerialActivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#ObjectActivity"/>
+        <rdfs:label>ManagerialActivity</rdfs:label>
     </owl:Class>
     
 
@@ -503,6 +506,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#Masonry">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>Masonry</rdfs:label>
     </owl:Class>
     
 
@@ -556,6 +560,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#Painting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>Painting</rdfs:label>
     </owl:Class>
     
 
@@ -587,6 +592,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#RenovationProject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#ConstructionProject"/>
+        <rdfs:label>RenovationProject</rdfs:label>
     </owl:Class>
     
 
@@ -607,6 +613,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#Tiling">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>Tiling</rdfs:label>
     </owl:Class>
     
 
@@ -682,6 +689,7 @@
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Processes#Waterproofing">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Processes#TransformationActivity"/>
+        <rdfs:label>Waterproofing</rdfs:label>
     </owl:Class>
     
 
