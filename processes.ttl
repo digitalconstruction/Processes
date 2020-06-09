@@ -65,6 +65,14 @@
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/digitalconstruction/Processes#contentManagedIn
+:contentManagedIn rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Project ;
+                  rdfs:range <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                  rdfs:comment "The root context in which the project information is represented and managed" ;
+                  rdfs:label "contentManagedIn" .
+
+
 ###  https://w3id.org/digitalconstruction/Processes#hasActivity
 :hasActivity rdf:type owl:ObjectProperty .
 
@@ -72,61 +80,73 @@
 ###  https://w3id.org/digitalconstruction/Processes#hasActor
 :hasActor rdf:type owl:ObjectProperty ;
           rdfs:domain :ObjectActivity ;
-          rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> .
+          rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+          rdfs:label "hasActor" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#hasCondition
 :hasCondition rdf:type owl:ObjectProperty ;
               owl:inverseOf :isConditionOf ;
-              rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> .
+              rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> ;
+              rdfs:label "hasCondition" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#hasEffect
 :hasEffect rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            owl:inverseOf :isEffectOf ;
-           rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> .
-
-
-###  https://w3id.org/digitalconstruction/Processes#hasEquipment
-:hasEquipment rdf:type owl:ObjectProperty .
+           rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> ;
+           rdfs:label "hasEffect" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#hasLocation
 :hasLocation rdf:type owl:ObjectProperty ;
              rdfs:domain :StationaryActivity ;
-             rdfs:range <https://w3id.org/digitalconstruction/Entities#Location> .
+             rdfs:range <https://w3id.org/digitalconstruction/Entities#Location> ;
+             rdfs:label "hasLocation" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#hasObject
 :hasObject rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isObjectIn ;
            rdfs:domain :ObjectActivity ;
-           rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> .
+           rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+           rdfs:label "hasObject" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#hasOrigin
 :hasOrigin rdf:type owl:ObjectProperty ;
            rdfs:domain :MovingActivity ;
-           rdfs:range <https://w3id.org/digitalconstruction/Entities#Location> .
+           rdfs:range <https://w3id.org/digitalconstruction/Entities#Location> ;
+           rdfs:label "hasOrigin" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#hasTarget
 :hasTarget rdf:type owl:ObjectProperty ;
            rdfs:domain :MovingActivity ;
-           rdfs:range <https://w3id.org/digitalconstruction/Entities#Location> .
+           rdfs:range <https://w3id.org/digitalconstruction/Entities#Location> ;
+           rdfs:label "hasTarget" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#isConditionOf
 :isConditionOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasActivity ;
-               rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+               rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+               rdfs:label "isConditionOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#isEffectOf
 :isEffectOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ,
                                :hasActivity ;
-            rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+            rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+            rdfs:label "isEffectOf" .
+
+
+###  https://w3id.org/digitalconstruction/Processes#isObjectIn
+:isObjectIn rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+            rdfs:range :ObjectActivity .
 
 
 ###  https://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion

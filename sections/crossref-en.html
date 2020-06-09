@@ -636,9 +636,9 @@ This section provides details for each class and property defined by Digital Con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasOrigin"
-               title="https://w3id.org/digitalconstruction/Processes#hasOrigin">has origin</a>
+               title="https://w3id.org/digitalconstruction/Processes#hasOrigin">hasOrigin</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTarget"
-               title="https://w3id.org/digitalconstruction/Processes#hasTarget">has target</a>
+               title="https://w3id.org/digitalconstruction/Processes#hasTarget">hasTarget</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -674,9 +674,15 @@ This section provides details for each class and property defined by Digital Con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasActor"
-               title="https://w3id.org/digitalconstruction/Processes#hasActor">has actor</a>
+               title="https://w3id.org/digitalconstruction/Processes#hasActor">hasActor</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasObject"
-               title="https://w3id.org/digitalconstruction/Processes#hasObject">has object</a>
+               title="https://w3id.org/digitalconstruction/Processes#hasObject">hasObject</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isObjectIn"
+               title="https://w3id.org/digitalconstruction/Processes#isObjectIn">is object in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -789,6 +795,12 @@ This section provides details for each class and property defined by Digital Con
                title="https://w3id.org/digitalconstruction/Processes#OrganizedProject">OrganizedProject</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#contentManagedIn"
+               title="https://w3id.org/digitalconstruction/Processes#contentManagedIn">contentManagedIn</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="RenovationProject">
@@ -837,7 +849,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasLocation"
-               title="https://w3id.org/digitalconstruction/Processes#hasLocation">has location</a>
+               title="https://w3id.org/digitalconstruction/Processes#hasLocation">hasLocation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1027,58 +1039,50 @@ This section provides details for each class and property defined by Digital Con
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#contentManagedIn"
+            title="https://w3id.org/digitalconstruction/Processes#contentManagedIn">contentManagedIn</a>
+      </li>
+      <li>
          <a href="#hasActor"
-            title="https://w3id.org/digitalconstruction/Processes#hasActor">
-            <span>has actor</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#hasActor">hasActor</a>
       </li>
       <li>
          <a href="#hasCondition"
-            title="https://w3id.org/digitalconstruction/Processes#hasCondition">
-            <span>has condition</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#hasCondition">hasCondition</a>
       </li>
       <li>
          <a href="#hasEffect"
-            title="https://w3id.org/digitalconstruction/Processes#hasEffect">
-            <span>has effect</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#hasEffect">hasEffect</a>
       </li>
       <li>
          <a href="#hasLocation"
-            title="https://w3id.org/digitalconstruction/Processes#hasLocation">
-            <span>has location</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#hasLocation">hasLocation</a>
       </li>
       <li>
          <a href="#hasObject"
-            title="https://w3id.org/digitalconstruction/Processes#hasObject">
-            <span>has object</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#hasObject">hasObject</a>
       </li>
       <li>
          <a href="#hasOrigin"
-            title="https://w3id.org/digitalconstruction/Processes#hasOrigin">
-            <span>has origin</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#hasOrigin">hasOrigin</a>
       </li>
       <li>
          <a href="#hasTarget"
-            title="https://w3id.org/digitalconstruction/Processes#hasTarget">
-            <span>has target</span>
+            title="https://w3id.org/digitalconstruction/Processes#hasTarget">hasTarget</a>
+      </li>
+      <li>
+         <a href="#isObjectIn"
+            title="https://w3id.org/digitalconstruction/Processes#isObjectIn">
+            <span>is object in</span>
          </a>
       </li>
       <li>
          <a href="#isConditionOf"
-            title="https://w3id.org/digitalconstruction/Processes#isConditionOf">
-            <span>is condition of</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#isConditionOf">isConditionOf</a>
       </li>
       <li>
          <a href="#isEffectOf"
-            title="https://w3id.org/digitalconstruction/Processes#isEffectOf">
-            <span>is effect of</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Processes#isEffectOf">isEffectOf</a>
       </li>
       <li>
          <a href="#occupiesTemporalRegion"
@@ -1087,8 +1091,34 @@ This section provides details for each class and property defined by Digital Con
          </a>
       </li>
    </ul>
+   <div class="entity" id="contentManagedIn">
+      <h3>contentManagedIn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Processes#contentManagedIn</p>
+      <div class="comment">
+         <span class="markdown">The root context in which the project information is represented and managed</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Project"
+                  title="https://w3id.org/digitalconstruction/Processes#Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#Context">context</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasActor">
-      <h3>has actor<sup class="type-op" title="object property">op</sup>
+      <h3>hasActor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1111,7 +1141,7 @@ This section provides details for each class and property defined by Digital Con
       </div>
    </div>
    <div class="entity" id="hasCondition">
-      <h3>has condition<sup class="type-op" title="object property">op</sup>
+      <h3>hasCondition<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1127,14 +1157,14 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#isConditionOf"
-                  title="https://w3id.org/digitalconstruction/Processes#isConditionOf">is condition of</a>
+                  title="https://w3id.org/digitalconstruction/Processes#isConditionOf">isConditionOf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasEffect">
-      <h3>has effect<sup class="type-op" title="object property">op</sup>
+      <h3>hasEffect<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1154,14 +1184,14 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#isEffectOf"
-                  title="https://w3id.org/digitalconstruction/Processes#isEffectOf">is effect of</a>
+                  title="https://w3id.org/digitalconstruction/Processes#isEffectOf">isEffectOf</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasLocation">
-      <h3>has location<sup class="type-op" title="object property">op</sup>
+      <h3>hasLocation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1184,7 +1214,7 @@ This section provides details for each class and property defined by Digital Con
       </div>
    </div>
    <div class="entity" id="hasObject">
-      <h3>has object<sup class="type-op" title="object property">op</sup>
+      <h3>hasObject<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1202,11 +1232,17 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isObjectIn"
+                  title="https://w3id.org/digitalconstruction/Processes#isObjectIn">is object in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasOrigin">
-      <h3>has origin<sup class="type-op" title="object property">op</sup>
+      <h3>hasOrigin<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1229,7 +1265,7 @@ This section provides details for each class and property defined by Digital Con
       </div>
    </div>
    <div class="entity" id="hasTarget">
-      <h3>has target<sup class="type-op" title="object property">op</sup>
+      <h3>hasTarget<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1251,8 +1287,36 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="isObjectIn">
+      <h3>is object in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Processes#isObjectIn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ObjectActivity"
+                  title="https://w3id.org/digitalconstruction/Processes#ObjectActivity">ObjectActivity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasObject"
+                  title="https://w3id.org/digitalconstruction/Processes#hasObject">hasObject</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isConditionOf">
-      <h3>is condition of<sup class="type-op" title="object property">op</sup>
+      <h3>isConditionOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1274,14 +1338,14 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasCondition"
-                  title="https://w3id.org/digitalconstruction/Processes#hasCondition">has condition</a>
+                  title="https://w3id.org/digitalconstruction/Processes#hasCondition">hasCondition</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="isEffectOf">
-      <h3>is effect of<sup class="type-op" title="object property">op</sup>
+      <h3>isEffectOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1303,7 +1367,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasEffect"
-                  title="https://w3id.org/digitalconstruction/Processes#hasEffect">has effect</a>
+                  title="https://w3id.org/digitalconstruction/Processes#hasEffect">hasEffect</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
