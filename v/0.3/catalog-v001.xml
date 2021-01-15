@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl" uri="file:/Users/sto/ontologies/BFO-ISO-2018-07-24/owl/bfo-2020.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Information" uri="https://w3id.org/digitalconstruction/Information#"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Agents" uri="https://w3id.org/digitalconstruction/Agents#"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Entities#" uri="https://w3id.org/digitalconstruction/Entities#"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/Entities#" uri="file:/Users/sto/ontologies/digitalconstruction/Entities/Entities.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/digitalconstruction/1.0.0" uri="file:/Users/sto/ontologies/digitalconstruction/Entities/Entities.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="http://w3id.org/digitalconstruction/Processes" uri="Documentation%08/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="https://w3id.org/digitalconstruction/Processes" uri="ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="shadowed:http://w3id.org/digitalconstruction/Processes" uri="%08/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="shadowed:http://w3id.org/digitalconstruction/Processes" uri="v/0.1/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="shadowed:http://w3id.org/digitalconstruction/Processes" uri="v/0.1/myDocumentation/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="shadowed:http://w3id.org/digitalconstruction/Processes" uri="v/0.1/Documentation%08/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="shadowed:http://w3id.org/digitalconstruction/Processes" uri="v/0.1/%08/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1595431072578" name="shadowed:https://w3id.org/digitalconstruction/Processes" uri="myDocumentation/ontology.xml"/>
+    </group>
+</catalog>

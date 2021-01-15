@@ -1,0 +1,94 @@
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<p> Activities in construction and renovation projects are related to a variety of different kinds of entities: building
+objects, information entities, resources, and the environment. These relations have been identified in the area of lean
+construction (Koskela, 1999, 2000), (Garcia-Lopetz, 2017). In the following figure different categories of flows are
+presented:
+</p>
+
+<center>
+<img src="sections/activity-flows.png" alt="Activity flows" height="400">
+</center>
+
+<p> Each activity has a number of flows but no necessarily in all the categories shown in the figure. For instance, in
+the design stage the activity-flows are mostly information entities and labor - equipment, spaces, materials, or
+environmental conditions do not have relevance to office activities.  Moreover, there can be multiple flows of
+each type. An activity may require multiple different equipment, labor crews, materials or information entities for
+their execution.  </p>
+
+<p> To model the logic of workflows, it is not sufficient merely to know which ingredients they have.  Activities are
+transformations that are chained one after another based on the state changes they create.  For instance, smoothing of a
+wall is an activity that transforms the wall surface from rough to even, and painting of the wall is an activity that
+requires that the surface is even.  This creates a precedence constraint between the smoothing and painting activities.
+To make it possible to represent the transformation logic of construction processes, there is a need to represent the
+</p>
+<ol>
+  <li><b>conditions</b> that an activity requires to hold for it to be executed; they can be
+  <ol>
+    <li>preconditions: conditions that should hold at the start of the activity</li>
+    <li>execution conditions: conditions that should hold all over the execution</li>
+  </ol>
+  </li>
+  <li><b>effects</b> that the execution of the activity brings to hold</li>
+</ol>
+
+<p>
+The figure above shows examples of all of these type of relations. All flows have associated conditions - both
+preconditions such as proper location and execution conditions such as reservation - and
+one flow has an effect that activity produces. 
+</p>
+
+<p> From the perspective of workflow management, activities have many properties - such as different kinds of resources
+and execution times - that are gradually specified in the planning and scheduling process. The possible values are,
+however, restricted by a set of constraints. The constraints can restrict the mutual values of different flows, or the
+conditions and effects of activities, as shown in the following figure: </p>
+
+<center>
+<img src="sections/transport1-example.png" alt="An example of the variables and constraints of a transportation activity"
+height="400">
+</center>
+
+<p> The figure shows that the activity <em>transport1</em> is of type <em>Transport</em> and have relation
+<em>occupies interval</em> with a <em>time:Interval</em>. The activity has a set of variable properties:
+<em>hasActor</em>, <em>hasObject</em>, <em>hasEquipment</em>, <em>hasOrigin</em>, and <em>hasTarget</em>. The
+time interval has two variable properties: <em>hasBeginning</em> and <em>hasEnd</em>. The possible values of these
+variables are restricted by a set of constraints. The actors are restricted to those with the capability of driving
+(<em>CapabiityRequirement</em> constraint), the vehicle is restricted to one that has sufficient load carrying
+capacity (<em>LoadCarryingCapacity</em> constraint), and the origin and target of transportation have to be different
+locations (<em>DifferentValue</em> constraint). The mutual values of beginning and end of the interval are also
+restricted by a <em>MinTemporalDistance</em> constraint, based on the duration to drive from origin to target. The
+activity <em>transport1</em> is also related to a number of <em>StateConstraint</em>. They have been organized in
+the figure into three different groups: the conditions that need to hold at the start of the activity, the conditions
+that need to hold during its exexution, and the effects that will hold in the end of the activity.  </p>
+
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>pro</b></td><td>&lt;http://w3id.org/digitalconstruction/Processes&gt;</td></tr>
+<tr><td><b>w3id-org</b></td><td>&lt;https://w3id.org&gt;</td></tr>
+<tr><td><b>ns</b></td><td>&lt;http://www.w3.org/2003/06/sw-vocab-status/ns&gt;</td></tr>
+<tr><td><b>oboInOwl</b></td><td>&lt;http://www.geneontology.org/formats/oboInOwl&gt;</td></tr>
+<tr><td><b>org</b></td><td>&lt;http://www.w3.org/ns/org&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>protege</b></td><td>&lt;http://protege.stanford.edu/plugins/owl/protege&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>2-0</b></td><td>&lt;http://purl.obolibrary.org/obo/bfo/2.0&gt;</td></tr>
+<tr><td><b>entities</b></td><td>&lt;https://w3id.org/digitalconstruction/Entities&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
+<tr><td><b>digitalconstruction</b></td><td>&lt;http://w3id.org/digitalconstruction&gt;</td></tr>
+<tr><td><b>obo</b></td><td>&lt;http://purl.obolibrary.org/obo&gt;</td></tr>
+<tr><td><b>wot</b></td><td>&lt;http://xmlns.com/wot/0.1&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
