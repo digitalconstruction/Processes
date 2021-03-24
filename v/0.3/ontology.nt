@@ -1,20 +1,20 @@
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Agents> .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Information> .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/elements/1.1/creator> "Seppo Törmä" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/elements/1.1/creator> "Yuan Zheng" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/elements/1.1/title> "Digital Construction Processes" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/terms/abstract> "Process ontology provides the concepts for construction processes, including activities, their relationships, and relations to other entities (activity flows). " .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/terms/created> "2019-12-20" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/terms/description> "Process ontology for digital construction" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dicp" .
-<https://w3id.org/digitalconstruction/Processes> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Processes" .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Processes" .
-<https://w3id.org/digitalconstruction/Processes> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Agents> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Information> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/elements/1.1/creator> "Seppo Törmä" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/elements/1.1/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/elements/1.1/title> "Digital Construction Processes" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/terms/abstract> "Process ontology provides the concepts for construction processes, including activities, their relationships, and relations to other entities (activity flows). " .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/terms/created> "2019-12-20" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/terms/description> "Process ontology for digital construction" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dicp" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Processes" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Processes" .
+<https://w3id.org/digitalconstruction/0.3/Processes> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
 # 
 # 
 # #################################################################
@@ -57,82 +57,82 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/digitalconstruction/Processes#contentManagedIn
-<https://w3id.org/digitalconstruction/Processes#contentManagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#Project> .
-<https://w3id.org/digitalconstruction/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Contexts#Context> .
-<https://w3id.org/digitalconstruction/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The root context in which the project information is represented and managed" .
-<https://w3id.org/digitalconstruction/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#label> "contentManagedIn" .
+# https://w3id.org/digitalconstruction/0.3/Processes#contentManagedIn
+<https://w3id.org/digitalconstruction/0.3/Processes#contentManagedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#Project> .
+<https://w3id.org/digitalconstruction/0.3/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Contexts#Context> .
+<https://w3id.org/digitalconstruction/0.3/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The root context in which the project information is represented and managed" .
+<https://w3id.org/digitalconstruction/0.3/Processes#contentManagedIn> <http://www.w3.org/2000/01/rdf-schema#label> "contentManagedIn" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasActivity
-<https://w3id.org/digitalconstruction/Processes#hasActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#hasActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasActor
-<https://w3id.org/digitalconstruction/Processes#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
-<https://w3id.org/digitalconstruction/Processes#hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "hasActor" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasActor
+<https://w3id.org/digitalconstruction/0.3/Processes#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "hasActor" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasCondition
-<https://w3id.org/digitalconstruction/Processes#hasCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasCondition> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Processes#isConditionOf> .
-<https://w3id.org/digitalconstruction/Processes#hasCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
-<https://w3id.org/digitalconstruction/Processes#hasCondition> <http://www.w3.org/2000/01/rdf-schema#label> "hasCondition" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasCondition
+<https://w3id.org/digitalconstruction/0.3/Processes#hasCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasCondition> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Processes#isConditionOf> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasCondition> <http://www.w3.org/2000/01/rdf-schema#label> "hasCondition" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasEffect
-<https://w3id.org/digitalconstruction/Processes#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasEffect> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasEffect> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Processes#isEffectOf> .
-<https://w3id.org/digitalconstruction/Processes#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
-<https://w3id.org/digitalconstruction/Processes#hasEffect> <http://www.w3.org/2000/01/rdf-schema#label> "hasEffect" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasEffect
+<https://w3id.org/digitalconstruction/0.3/Processes#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasEffect> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasEffect> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Processes#isEffectOf> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasEffect> <http://www.w3.org/2000/01/rdf-schema#label> "hasEffect" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasLocation
-<https://w3id.org/digitalconstruction/Processes#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
-<https://w3id.org/digitalconstruction/Processes#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
-<https://w3id.org/digitalconstruction/Processes#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasLocation
+<https://w3id.org/digitalconstruction/0.3/Processes#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasObject
-<https://w3id.org/digitalconstruction/Processes#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasObject> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Processes#isObjectIn> .
-<https://w3id.org/digitalconstruction/Processes#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
-<https://w3id.org/digitalconstruction/Processes#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasObject" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasObject
+<https://w3id.org/digitalconstruction/0.3/Processes#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasObject> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Processes#isObjectIn> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasObject" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasOrigin
-<https://w3id.org/digitalconstruction/Processes#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
-<https://w3id.org/digitalconstruction/Processes#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
-<https://w3id.org/digitalconstruction/Processes#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasOrigin
+<https://w3id.org/digitalconstruction/0.3/Processes#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
 # 
-# https://w3id.org/digitalconstruction/Processes#hasTarget
-<https://w3id.org/digitalconstruction/Processes#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
-<https://w3id.org/digitalconstruction/Processes#hasTarget> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
-<https://w3id.org/digitalconstruction/Processes#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "hasTarget" .
+# https://w3id.org/digitalconstruction/0.3/Processes#hasTarget
+<https://w3id.org/digitalconstruction/0.3/Processes#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasTarget> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/0.3/Processes#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "hasTarget" .
 # 
-# https://w3id.org/digitalconstruction/Processes#isConditionOf
-<https://w3id.org/digitalconstruction/Processes#isConditionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Processes#hasActivity> .
-<https://w3id.org/digitalconstruction/Processes#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
-<https://w3id.org/digitalconstruction/Processes#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#label> "isConditionOf" .
+# https://w3id.org/digitalconstruction/0.3/Processes#isConditionOf
+<https://w3id.org/digitalconstruction/0.3/Processes#isConditionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Processes#hasActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#label> "isConditionOf" .
 # 
-# https://w3id.org/digitalconstruction/Processes#isEffectOf
-<https://w3id.org/digitalconstruction/Processes#isEffectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Processes#hasActivity> .
-<https://w3id.org/digitalconstruction/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
-<https://w3id.org/digitalconstruction/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEffectOf" .
+# https://w3id.org/digitalconstruction/0.3/Processes#isEffectOf
+<https://w3id.org/digitalconstruction/0.3/Processes#isEffectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/Processes#hasActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isEffectOf> <http://www.w3.org/2000/01/rdf-schema#label> "isEffectOf" .
 # 
-# https://w3id.org/digitalconstruction/Processes#isObjectIn
-<https://w3id.org/digitalconstruction/Processes#isObjectIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#isObjectIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
-<https://w3id.org/digitalconstruction/Processes#isObjectIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+# https://w3id.org/digitalconstruction/0.3/Processes#isObjectIn
+<https://w3id.org/digitalconstruction/0.3/Processes#isObjectIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isObjectIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/0.3/Processes#isObjectIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
 # 
-# https://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion
-<https://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
-<https://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000008> .
+# https://w3id.org/digitalconstruction/0.3/Processes#occupiesTemporalRegion
+<https://w3id.org/digitalconstruction/0.3/Processes#occupiesTemporalRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Processes#occupiesTemporalRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<https://w3id.org/digitalconstruction/0.3/Processes#occupiesTemporalRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000008> .
 <http://purl.obolibrary.org/obo/BFO_0000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
@@ -164,220 +164,220 @@
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000008> .
 # 
-# https://w3id.org/digitalconstruction/Entities#Activity
-<https://w3id.org/digitalconstruction/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+# https://w3id.org/digitalconstruction/0.3/Entities#Activity
+<https://w3id.org/digitalconstruction/0.3/Entities#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/Processes#occupiesTemporalRegion> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/0.3/Processes#occupiesTemporalRegion> .
 _:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.obolibrary.org/obo/BFO_0000038> .
 # 
-# https://w3id.org/digitalconstruction/Processes#ActivityGroup
-<https://w3id.org/digitalconstruction/Processes#ActivityGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Activity> .
-<https://w3id.org/digitalconstruction/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
-<https://w3id.org/digitalconstruction/Processes#ActivityGroup> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of activities, not necessarily having any common purpose" .
-<https://w3id.org/digitalconstruction/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityGroup" .
+# https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup
+<https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of activities, not necessarily having any common purpose" .
+<https://w3id.org/digitalconstruction/0.3/Processes#ActivityGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityGroup" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Adjoin
-<https://w3id.org/digitalconstruction/Processes#Adjoin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Adjoin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> .
-<https://w3id.org/digitalconstruction/Processes#Adjoin> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaching an onbject to a base object" .
-<https://w3id.org/digitalconstruction/Processes#Adjoin> <http://www.w3.org/2000/01/rdf-schema#label> "Adjoin" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Adjoin
+<https://w3id.org/digitalconstruction/0.3/Processes#Adjoin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Adjoin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Adjoin> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaching an onbject to a base object" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Adjoin> <http://www.w3.org/2000/01/rdf-schema#label> "Adjoin" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Approve
-<https://w3id.org/digitalconstruction/Processes#Approve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Approve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
-<https://w3id.org/digitalconstruction/Processes#Approve> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes the administrative or management status of an object, thus enabling further activities to be performed on it." .
-<https://w3id.org/digitalconstruction/Processes#Approve> <http://www.w3.org/2000/01/rdf-schema#label> "Approve" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Approve
+<https://w3id.org/digitalconstruction/0.3/Processes#Approve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Approve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Approve> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes the administrative or management status of an object, thus enabling further activities to be performed on it." .
+<https://w3id.org/digitalconstruction/0.3/Processes#Approve> <http://www.w3.org/2000/01/rdf-schema#label> "Approve" .
 # 
-# https://w3id.org/digitalconstruction/Processes#BuildingActivity
-<https://w3id.org/digitalconstruction/Processes#BuildingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#BuildingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
-<https://w3id.org/digitalconstruction/Processes#BuildingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that creates an object from materials, such as from concrete, timber or bricks." .
-<https://w3id.org/digitalconstruction/Processes#BuildingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#BuildingActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#BuildingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#BuildingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#BuildingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that creates an object from materials, such as from concrete, timber or bricks." .
+<https://w3id.org/digitalconstruction/0.3/Processes#BuildingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#CapabilityConstraint
-<https://w3id.org/digitalconstruction/Processes#CapabilityConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#CapabilityConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Variables#Constraint> .
-<https://w3id.org/digitalconstruction/Processes#CapabilityConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "CapabilityConstraint" .
+# https://w3id.org/digitalconstruction/0.3/Processes#CapabilityConstraint
+<https://w3id.org/digitalconstruction/0.3/Processes#CapabilityConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#CapabilityConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Variables#Constraint> .
+<https://w3id.org/digitalconstruction/0.3/Processes#CapabilityConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "CapabilityConstraint" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Caulking
-<https://w3id.org/digitalconstruction/Processes#Caulking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Caulking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#Caulking> <http://www.w3.org/2000/01/rdf-schema#label> "Caulking" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Caulking
+<https://w3id.org/digitalconstruction/0.3/Processes#Caulking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Caulking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Caulking> <http://www.w3.org/2000/01/rdf-schema#label> "Caulking" .
 # 
-# https://w3id.org/digitalconstruction/Processes#ConcreteCasting
-<https://w3id.org/digitalconstruction/Processes#ConcreteCasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#ConcreteCasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#BuildingActivity> .
-<https://w3id.org/digitalconstruction/Processes#ConcreteCasting> <http://www.w3.org/2000/01/rdf-schema#label> "ConcreteCasting" .
+# https://w3id.org/digitalconstruction/0.3/Processes#ConcreteCasting
+<https://w3id.org/digitalconstruction/0.3/Processes#ConcreteCasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ConcreteCasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#BuildingActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ConcreteCasting> <http://www.w3.org/2000/01/rdf-schema#label> "ConcreteCasting" .
 # 
-# https://w3id.org/digitalconstruction/Processes#ConstructionProject
-<https://w3id.org/digitalconstruction/Processes#ConstructionProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#ConstructionProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#OrganizedProject> .
-<https://w3id.org/digitalconstruction/Processes#ConstructionProject> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionProject" .
+# https://w3id.org/digitalconstruction/0.3/Processes#ConstructionProject
+<https://w3id.org/digitalconstruction/0.3/Processes#ConstructionProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ConstructionProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#OrganizedProject> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ConstructionProject> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionProject" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Disjoin
-<https://w3id.org/digitalconstruction/Processes#Disjoin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Disjoin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> .
-<https://w3id.org/digitalconstruction/Processes#Disjoin> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object attached to a base object apart from it" .
-<https://w3id.org/digitalconstruction/Processes#Disjoin> <http://www.w3.org/2000/01/rdf-schema#label> "Disjoin" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Disjoin
+<https://w3id.org/digitalconstruction/0.3/Processes#Disjoin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Disjoin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Disjoin> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object attached to a base object apart from it" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Disjoin> <http://www.w3.org/2000/01/rdf-schema#label> "Disjoin" .
 # 
-# https://w3id.org/digitalconstruction/Processes#FloorConcreting
-<https://w3id.org/digitalconstruction/Processes#FloorConcreting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#FloorConcreting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#FloorConcreting> <http://www.w3.org/2000/01/rdf-schema#label> "FloorConcreting" .
+# https://w3id.org/digitalconstruction/0.3/Processes#FloorConcreting
+<https://w3id.org/digitalconstruction/0.3/Processes#FloorConcreting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#FloorConcreting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#FloorConcreting> <http://www.w3.org/2000/01/rdf-schema#label> "FloorConcreting" .
 # 
-# https://w3id.org/digitalconstruction/Processes#FloorCovering
-<https://w3id.org/digitalconstruction/Processes#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#label> "FloorCovering" .
+# https://w3id.org/digitalconstruction/0.3/Processes#FloorCovering
+<https://w3id.org/digitalconstruction/0.3/Processes#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#label> "FloorCovering" .
 # 
-# https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction
-<https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#BuildingActivity> .
-<https://w3id.org/digitalconstruction/Processes#IndoorWallConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "IndoorWallConstruction" .
+# https://w3id.org/digitalconstruction/0.3/Processes#IndoorWallConstruction
+<https://w3id.org/digitalconstruction/0.3/Processes#IndoorWallConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#IndoorWallConstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#BuildingActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#IndoorWallConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "IndoorWallConstruction" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Inspect
-<https://w3id.org/digitalconstruction/Processes#Inspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Inspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
-<https://w3id.org/digitalconstruction/Processes#Inspect> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity to create information about the conformance of an object with its specification." .
-<https://w3id.org/digitalconstruction/Processes#Inspect> <http://www.w3.org/2000/01/rdf-schema#label> "Inspect" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Inspect
+<https://w3id.org/digitalconstruction/0.3/Processes#Inspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Inspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Inspect> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity to create information about the conformance of an object with its specification." .
+<https://w3id.org/digitalconstruction/0.3/Processes#Inspect> <http://www.w3.org/2000/01/rdf-schema#label> "Inspect" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Install
-<https://w3id.org/digitalconstruction/Processes#Install> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Install> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Adjoin> .
-<https://w3id.org/digitalconstruction/Processes#Install> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaching an object to a base object" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Install
+<https://w3id.org/digitalconstruction/0.3/Processes#Install> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Install> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Adjoin> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Install> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaching an object to a base object" .
 # 
-# https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity
-<https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
-<https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes the attachment of an object to a base object. Examples are installation of a door to a wall, a window to a wall, a flow segments to a flow system, loading or unloading a shipment to a truck, and so on." .
-<https://w3id.org/digitalconstruction/Processes#JoinRelatedActivity> <http://www.w3.org/2000/01/rdf-schema#label> "JoinRelatedActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#JoinRelatedActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#JoinRelatedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#JoinRelatedActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#JoinRelatedActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes the attachment of an object to a base object. Examples are installation of a door to a wall, a window to a wall, a flow segments to a flow system, loading or unloading a shipment to a truck, and so on." .
+<https://w3id.org/digitalconstruction/0.3/Processes#JoinRelatedActivity> <http://www.w3.org/2000/01/rdf-schema#label> "JoinRelatedActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Jointing
-<https://w3id.org/digitalconstruction/Processes#Jointing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Jointing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#Jointing> <http://www.w3.org/2000/01/rdf-schema#label> "Jointing" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Jointing
+<https://w3id.org/digitalconstruction/0.3/Processes#Jointing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Jointing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Jointing> <http://www.w3.org/2000/01/rdf-schema#label> "Jointing" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Lift
-<https://w3id.org/digitalconstruction/Processes#Lift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Lift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
-<https://w3id.org/digitalconstruction/Processes#Lift> <http://www.w3.org/2000/01/rdf-schema#comment> "A moving an object using a crane as the equipment. Often there is a vertical difference between the start location and end location of lifting." .
-<https://w3id.org/digitalconstruction/Processes#Lift> <http://www.w3.org/2000/01/rdf-schema#label> "Lift" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Lift
+<https://w3id.org/digitalconstruction/0.3/Processes#Lift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Lift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Lift> <http://www.w3.org/2000/01/rdf-schema#comment> "A moving an object using a crane as the equipment. Often there is a vertical difference between the start location and end location of lifting." .
+<https://w3id.org/digitalconstruction/0.3/Processes#Lift> <http://www.w3.org/2000/01/rdf-schema#label> "Lift" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Load
-<https://w3id.org/digitalconstruction/Processes#Load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Load> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Adjoin> .
-<https://w3id.org/digitalconstruction/Processes#Load> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaching an object to a vehicle" .
-<https://w3id.org/digitalconstruction/Processes#Load> <http://www.w3.org/2000/01/rdf-schema#label> "Load" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Load
+<https://w3id.org/digitalconstruction/0.3/Processes#Load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Load> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Adjoin> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Load> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaching an object to a vehicle" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Load> <http://www.w3.org/2000/01/rdf-schema#label> "Load" .
 # 
-# https://w3id.org/digitalconstruction/Processes#ManagerialActivity
-<https://w3id.org/digitalconstruction/Processes#ManagerialActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#ManagerialActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#ManagerialActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ManagerialActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#ManagerialActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#ManagerialActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ManagerialActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ManagerialActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ManagerialActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Masonry
-<https://w3id.org/digitalconstruction/Processes#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Masonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#Masonry> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Masonry
+<https://w3id.org/digitalconstruction/0.3/Processes#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Masonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Masonry> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry" .
 # 
-# https://w3id.org/digitalconstruction/Processes#MovingActivity
-<https://w3id.org/digitalconstruction/Processes#MovingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#MovingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#MovingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that changes the location of its object." .
-<https://w3id.org/digitalconstruction/Processes#MovingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "MovingActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#MovingActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#MovingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#MovingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#MovingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity that changes the location of its object." .
+<https://w3id.org/digitalconstruction/0.3/Processes#MovingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "MovingActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#ObjectActivity
-<https://w3id.org/digitalconstruction/Processes#ObjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#ObjectActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Activity> .
-<https://w3id.org/digitalconstruction/Processes#ObjectActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity focused on some specific object and carried out by an actor" .
-<https://w3id.org/digitalconstruction/Processes#ObjectActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ObjectActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#ObjectActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#ObjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ObjectActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#ObjectActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity focused on some specific object and carried out by an actor" .
+<https://w3id.org/digitalconstruction/0.3/Processes#ObjectActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ObjectActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#OrganizedProject
-<https://w3id.org/digitalconstruction/Processes#OrganizedProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#OrganizedProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Project> .
-<https://w3id.org/digitalconstruction/Processes#OrganizedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A Project carried out by an Organization" .
-<https://w3id.org/digitalconstruction/Processes#OrganizedProject> <http://www.w3.org/2000/01/rdf-schema#label> "OrganizedProject" .
+# https://w3id.org/digitalconstruction/0.3/Processes#OrganizedProject
+<https://w3id.org/digitalconstruction/0.3/Processes#OrganizedProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#OrganizedProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Project> .
+<https://w3id.org/digitalconstruction/0.3/Processes#OrganizedProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A Project carried out by an Organization" .
+<https://w3id.org/digitalconstruction/0.3/Processes#OrganizedProject> <http://www.w3.org/2000/01/rdf-schema#label> "OrganizedProject" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Pack
-<https://w3id.org/digitalconstruction/Processes#Pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Pack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Adjoin> .
-<https://w3id.org/digitalconstruction/Processes#Pack> <http://www.w3.org/2000/01/rdf-schema#comment> "Adding an object to a container" .
-<https://w3id.org/digitalconstruction/Processes#Pack> <http://www.w3.org/2000/01/rdf-schema#label> "Pack" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Pack
+<https://w3id.org/digitalconstruction/0.3/Processes#Pack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Pack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Adjoin> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Pack> <http://www.w3.org/2000/01/rdf-schema#comment> "Adding an object to a container" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Pack> <http://www.w3.org/2000/01/rdf-schema#label> "Pack" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Painting
-<https://w3id.org/digitalconstruction/Processes#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Painting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#Painting> <http://www.w3.org/2000/01/rdf-schema#label> "Painting" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Painting
+<https://w3id.org/digitalconstruction/0.3/Processes#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Painting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Painting> <http://www.w3.org/2000/01/rdf-schema#label> "Painting" .
 # 
-# https://w3id.org/digitalconstruction/Processes#PlanningActivity
-<https://w3id.org/digitalconstruction/Processes#PlanningActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#PlanningActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
-<https://w3id.org/digitalconstruction/Processes#PlanningActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that creates a plan" .
-<https://w3id.org/digitalconstruction/Processes#PlanningActivity> <http://www.w3.org/2000/01/rdf-schema#label> "PlanningActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#PlanningActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#PlanningActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#PlanningActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#PlanningActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that creates a plan" .
+<https://w3id.org/digitalconstruction/0.3/Processes#PlanningActivity> <http://www.w3.org/2000/01/rdf-schema#label> "PlanningActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Project
-<https://w3id.org/digitalconstruction/Processes#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#Project> <http://www.w3.org/2000/01/rdf-schema#comment> "A ObjectActivity with specific goals" .
-<https://w3id.org/digitalconstruction/Processes#Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Project
+<https://w3id.org/digitalconstruction/0.3/Processes#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Project> <http://www.w3.org/2000/01/rdf-schema#comment> "A ObjectActivity with specific goals" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project" .
 # 
-# https://w3id.org/digitalconstruction/Processes#RenovationProject
-<https://w3id.org/digitalconstruction/Processes#RenovationProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#RenovationProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ConstructionProject> .
-<https://w3id.org/digitalconstruction/Processes#RenovationProject> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationProject" .
+# https://w3id.org/digitalconstruction/0.3/Processes#RenovationProject
+<https://w3id.org/digitalconstruction/0.3/Processes#RenovationProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#RenovationProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ConstructionProject> .
+<https://w3id.org/digitalconstruction/0.3/Processes#RenovationProject> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationProject" .
 # 
-# https://w3id.org/digitalconstruction/Processes#StationaryActivity
-<https://w3id.org/digitalconstruction/Processes#StationaryActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#StationaryActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
-<https://w3id.org/digitalconstruction/Processes#StationaryActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity taking place in one location" .
-<https://w3id.org/digitalconstruction/Processes#StationaryActivity> <http://www.w3.org/2000/01/rdf-schema#label> "StationaryActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#StationaryActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#StationaryActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#StationaryActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ObjectActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#StationaryActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity taking place in one location" .
+<https://w3id.org/digitalconstruction/0.3/Processes#StationaryActivity> <http://www.w3.org/2000/01/rdf-schema#label> "StationaryActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Tiling
-<https://w3id.org/digitalconstruction/Processes#Tiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Tiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#Tiling> <http://www.w3.org/2000/01/rdf-schema#label> "Tiling" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Tiling
+<https://w3id.org/digitalconstruction/0.3/Processes#Tiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Tiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Tiling> <http://www.w3.org/2000/01/rdf-schema#label> "Tiling" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Transfer
-<https://w3id.org/digitalconstruction/Processes#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Transfer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
-<https://w3id.org/digitalconstruction/Processes#Transfer> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity of changing the owner of an object." .
-<https://w3id.org/digitalconstruction/Processes#Transfer> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Transfer
+<https://w3id.org/digitalconstruction/0.3/Processes#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Transfer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#ManagerialActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Transfer> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity of changing the owner of an object." .
+<https://w3id.org/digitalconstruction/0.3/Processes#Transfer> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer" .
 # 
-# https://w3id.org/digitalconstruction/Processes#TransformationActivity
-<https://w3id.org/digitalconstruction/Processes#TransformationActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#TransformationActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
-<https://w3id.org/digitalconstruction/Processes#TransformationActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes the state of an object by applying some material on it or removing some of it. Examples are painting and grinding." .
-<https://w3id.org/digitalconstruction/Processes#TransformationActivity> <http://www.w3.org/2000/01/rdf-schema#label> "TransformationActivity" .
+# https://w3id.org/digitalconstruction/0.3/Processes#TransformationActivity
+<https://w3id.org/digitalconstruction/0.3/Processes#TransformationActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#TransformationActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#StationaryActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#TransformationActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes the state of an object by applying some material on it or removing some of it. Examples are painting and grinding." .
+<https://w3id.org/digitalconstruction/0.3/Processes#TransformationActivity> <http://www.w3.org/2000/01/rdf-schema#label> "TransformationActivity" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Transport
-<https://w3id.org/digitalconstruction/Processes#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
-<https://w3id.org/digitalconstruction/Processes#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Moving activity that is carried out using a vehicle as an equipment." .
-<https://w3id.org/digitalconstruction/Processes#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Transport
+<https://w3id.org/digitalconstruction/0.3/Processes#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#MovingActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Moving activity that is carried out using a vehicle as an equipment." .
+<https://w3id.org/digitalconstruction/0.3/Processes#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Uninstall
-<https://w3id.org/digitalconstruction/Processes#Uninstall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Uninstall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Disjoin> .
-<https://w3id.org/digitalconstruction/Processes#Uninstall> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object attached to a base object apart from it." .
-<https://w3id.org/digitalconstruction/Processes#Uninstall> <http://www.w3.org/2000/01/rdf-schema#label> "Uninstall" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Uninstall
+<https://w3id.org/digitalconstruction/0.3/Processes#Uninstall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Uninstall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Disjoin> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Uninstall> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object attached to a base object apart from it." .
+<https://w3id.org/digitalconstruction/0.3/Processes#Uninstall> <http://www.w3.org/2000/01/rdf-schema#label> "Uninstall" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Unload
-<https://w3id.org/digitalconstruction/Processes#Unload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Unload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Disjoin> .
-<https://w3id.org/digitalconstruction/Processes#Unload> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object away from a vehicle" .
-<https://w3id.org/digitalconstruction/Processes#Unload> <http://www.w3.org/2000/01/rdf-schema#label> "Unload" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Unload
+<https://w3id.org/digitalconstruction/0.3/Processes#Unload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Unload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Disjoin> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Unload> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object away from a vehicle" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Unload> <http://www.w3.org/2000/01/rdf-schema#label> "Unload" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Unpack
-<https://w3id.org/digitalconstruction/Processes#Unpack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Unpack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Disjoin> .
-<https://w3id.org/digitalconstruction/Processes#Unpack> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object out from a container" .
-<https://w3id.org/digitalconstruction/Processes#Unpack> <http://www.w3.org/2000/01/rdf-schema#label> "Unpack" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Unpack
+<https://w3id.org/digitalconstruction/0.3/Processes#Unpack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Unpack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#Disjoin> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Unpack> <http://www.w3.org/2000/01/rdf-schema#comment> "Taking an object out from a container" .
+<https://w3id.org/digitalconstruction/0.3/Processes#Unpack> <http://www.w3.org/2000/01/rdf-schema#label> "Unpack" .
 # 
-# https://w3id.org/digitalconstruction/Processes#Waterproofing
-<https://w3id.org/digitalconstruction/Processes#Waterproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Processes#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
-<https://w3id.org/digitalconstruction/Processes#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Waterproofing" .
+# https://w3id.org/digitalconstruction/0.3/Processes#Waterproofing
+<https://w3id.org/digitalconstruction/0.3/Processes#Waterproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Processes#TransformationActivity> .
+<https://w3id.org/digitalconstruction/0.3/Processes#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Waterproofing" .
 # 
 # 
 # 
