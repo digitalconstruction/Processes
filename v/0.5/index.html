@@ -272,6 +272,7 @@
         <li><a href="#Observation">Observation</a></li>
         <li><a href="#Project">Project</a></li>
         <li><a href="#RenovationProject">RenovationProject</a></li>
+        <li><a href="#Resource">Resource</a></li>
         <li><a href="#ResourceRole">ResourceRole</a></li>
         <li><a href="#Service">Service</a></li>
     </ul>
@@ -297,43 +298,45 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Project">Project</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Actuation">Actuation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasEffect">hasEffect</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasOutputObject">hasOutputObject</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasObject">hasObject</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasInputObject">hasInputObject</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLocation">hasLocation</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasCondition">hasCondition</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasEffect">hasEffect</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isResourceIn">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#occupiesTimeInterval">occupiesTimeInterval</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasOutputObject">hasOutputObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isInputObjectIn">isInputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isResourceIn1">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isOccupiedByActivity">isOccupiedByActivity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isOccupiedByActivity">isOccupiedByActivity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isOutputObjectIn">isOutputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isInputObjectIn">isInputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
@@ -480,6 +483,21 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="Resource">
+        <h3>Resource<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Resource</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Resource is any entity that plays a ResourceRole</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="ResourceRole">
         <h3>ResourceRole<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -497,6 +515,18 @@
                 <th>Super-classes</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/0.5/Processes#Role">Role</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isResourceIn1">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#isResourceIn">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -526,6 +556,7 @@
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#isResourceIn">isResourceIn</a></li>
         <li><a href="#hasCondition">hasCondition</a></li>
         <li><a href="#hasEffect">hasEffect</a></li>
         <li><a href="#hasInputObject">hasInputObject</a></li>
@@ -545,9 +576,43 @@
         <li><a href="#isOccupiedByActivity">isOccupiedByActivity</a></li>
         <li><a href="#isOutputObjectIn">isOutputObjectIn</a></li>
         <li><a href="#isProcessPhaseOf">isProcessPhaseOf</a></li>
+        <li><a href="#isResourceIn1">isResourceIn</a></li>
         <li><a href="#isSubActivityOf">isSubActivityOf</a></li>
         <li><a href="#occupiesTimeInterval">occupiesTimeInterval</a></li>
     </ul>
+    <div class="entity property" id="isResourceIn">
+        <h3>isResourceIn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasAssignedResource</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The resource role that is assigned to this activity.
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isResourceIn1">isResourceIn</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="hasCondition">
         <h3>hasCondition<sup title="object property" class="sup-op">op</sup></h3>
         <table>
@@ -1165,6 +1230,39 @@
                 <th>Super-properties</th>
                 <td>
                     <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isResourceIn1">
+        <h3>isResourceIn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isResourceIn</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The activity in whose execution this entity plays a resource role .
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isResourceIn">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>

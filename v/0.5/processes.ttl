@@ -234,6 +234,20 @@
 		  rdfs:comment "The subproperty of :isSubActivityOf." ;
 		  rdfs:label "isProcessPhaseOf" .
 
+:isResourceIn rdf:type owl:ObjectProperty ;
+	      rdfs:comment "The activity in whose execution this entity plays a resource role ." ;
+	      owl:inverseOf :hasAssignedResource ;
+	      rdfs:domain :ResourceRole ;
+	      rdfs:range :Activity ;
+	      rdfs:label "isResourceIn" .
+
+:hasAssignedResource rdf:type owl:ObjectProperty ;
+	      rdfs:comment "The resource role that is assigned to this activity." ;
+	      owl:inverseOf :isResourceIn ;
+	      rdfs:domain :Activity ;
+	      rdfs:range  :ResourceRole ;
+	      rdfs:label "isResourceIn" .
+
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#isSubActivityOf
 :isSubActivityOf rdf:type owl:ObjectProperty ;
@@ -312,6 +326,14 @@
            rdfs:subClassOf :Role ;
            rdfs:comment "A role in which an entity acts as a resource in an activity" ;
            rdfs:label "ResourceRole" .
+
+:Resource rdf:type owl:Class ;
+	  owl:equivalentClass [ a owl:Class ;
+			       owl:intersectionOf (dice:Entity [ a owl:Restriction ;
+						    	        owl:onProperty dice:hasRole ;
+			      	    				owl:someValuesFrom :ResourceRole ]) ] ;
+	  rdfs:comment "Resource is any entity that plays a ResourceRole" ;
+	  rdfs:label "Resource" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#Service
