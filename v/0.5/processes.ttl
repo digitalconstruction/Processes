@@ -264,6 +264,22 @@
                       rdfs:range dice:TimeInterval ;
                       rdfs:label "occupiesTimeInterval" .
 
+:observedProperty rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Observation ;
+                  rdfs:range dicv:Property ;
+                  rdfs:label "observedProperty" .
+
+:hasObservedResult rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Observation ;
+                   rdfs:range dicv:QuantitativeState ;
+                   rdfs:label "hasObservedResult" .
+
+:actsOnProperty rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Actuation ;
+                  rdfs:range dicv:Property ;
+                  rdfs:label "actsOnProperty" .
+
+
 
 #################################################################
 #    Classes
