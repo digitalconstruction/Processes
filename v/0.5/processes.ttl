@@ -264,10 +264,10 @@
                       rdfs:range dice:TimeInterval ;
                       rdfs:label "occupiesTimeInterval" .
 
-:observedProperty rdf:type owl:ObjectProperty ;
+:hasObservedProperty rdf:type owl:ObjectProperty ;
                   rdfs:domain :Observation ;
                   rdfs:range dicv:Property ;
-                  rdfs:label "observedProperty" .
+                  rdfs:label "hasObservedProperty" .
 
 :hasObservedResult rdf:type owl:ObjectProperty ;
                    rdfs:domain :Observation ;
