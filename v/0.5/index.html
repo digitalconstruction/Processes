@@ -249,7 +249,9 @@
     <ol>
         <li><a href="#classes">Classes</a></li>
         <li><a href="#objectproperties">Object Properties</a></li>
+        <li><a href="#datatypeproperties">Datatype Properties</a></li>
         <li><a href="#annotationproperties">Annotation Properties</a></li>
+        <li><a href="#namedindividuals">Named Individuals</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -265,16 +267,21 @@
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#Activity">Activity</a></li>
+        <li><a href="#ActivityCost">ActivityCost</a></li>
         <li><a href="#Actuation">Actuation</a></li>
         <li><a href="#BehaviorProcess">BehaviorProcess</a></li>
         <li><a href="#CapabilityConstraint">CapabilityConstraint</a></li>
         <li><a href="#ConstructionProject">ConstructionProject</a></li>
+        <li><a href="#CostProperty">CostProperty</a></li>
         <li><a href="#Observation">Observation</a></li>
         <li><a href="#Project">Project</a></li>
         <li><a href="#RenovationProject">RenovationProject</a></li>
         <li><a href="#Resource">Resource</a></li>
+        <li><a href="#ResourceCost">ResourceCost</a></li>
         <li><a href="#ResourceRole">ResourceRole</a></li>
+        <li><a href="#Role">Role</a></li>
         <li><a href="#Service">Service</a></li>
+        <li><a href="#UnitCost">UnitCost</a></li>
     </ul>
     <div class="entity class" id="Activity">
         <h3>Activity<sup title="class" class="sup-c">c</sup></h3>
@@ -306,40 +313,56 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#occupiesTimeInterval">occupiesTimeInterval</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasEffect">hasEffect</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasOutputObject">hasOutputObject</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasInputObject">hasInputObject</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObject">hasObject</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLocation">hasLocation</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isResourceIn">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasCondition">hasCondition</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObject">hasObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasOutputObject">hasOutputObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAssignedResource">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#occupiesTimeInterval">occupiesTimeInterval</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasCondition">hasCondition</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasInputObject">hasInputObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasActivityCost">hasActivityCost</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
+                    <a href="#isResourceIn">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isEffectOf">isEffectOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isInputObjectIn">isInputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isOccupiedByActivity">isOccupiedByActivity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isEffectOf">isEffectOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isOccupiedByActivity">isOccupiedByActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isConditionOf">isConditionOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isOutputObjectIn">isOutputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isInputObjectIn">isInputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isConditionOf">isConditionOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isResourceIn1">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ActivityCost">
+        <h3>ActivityCost<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ActivityCost</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CostProperty">CostProperty</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -428,6 +451,28 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="CostProperty">
+        <h3>CostProperty<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#CostProperty</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#QuantitativeProperty">dicv:QuantitativeProperty</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#ResourceCost">ResourceCost</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ActivityCost">ActivityCost</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="Observation">
         <h3>Observation<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -450,8 +495,8 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasObservedResult">hasObservedResult</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasObservedProperty">hasObservedProperty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObservedResult">hasObservedResult</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -511,6 +556,34 @@
                     <p>Resource is any entity that plays a ResourceRole</p>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasUnitCost">hasUnitCost</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasCostUnit">hasCostUnit</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ResourceCost">
+        <h3>ResourceCost<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ResourceCost</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CostProperty">CostProperty</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#UnitCost">UnitCost</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="ResourceRole">
@@ -529,19 +602,35 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Processes#Role">Role</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Role">Role</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isResourceIn1">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasUsageAmount">hasUsageAmount</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isResourceIn">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isResourceIn">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAssignedResource">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Role">
+        <h3>Role<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Role</code></td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -567,13 +656,29 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="UnitCost">
+        <h3>UnitCost<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#UnitCost</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#ResourceCost">ResourceCost</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#actsOnProperty">actsOnProperty</a></li>
-        <li><a href="#isResourceIn">isResourceIn</a></li>
+        <li><a href="#hasAssignedResource">hasAssignedResource</a></li>
         <li><a href="#hasCondition">hasCondition</a></li>
+        <li><a href="#hasCostUnit">hasCostUnit</a></li>
         <li><a href="#hasEffect">hasEffect</a></li>
         <li><a href="#hasInputObject">hasInputObject</a></li>
         <li><a href="#hasLocation">hasLocation</a></li>
@@ -594,7 +699,7 @@
         <li><a href="#isOccupiedByActivity">isOccupiedByActivity</a></li>
         <li><a href="#isOutputObjectIn">isOutputObjectIn</a></li>
         <li><a href="#isProcessPhaseOf">isProcessPhaseOf</a></li>
-        <li><a href="#isResourceIn1">isResourceIn</a></li>
+        <li><a href="#isResourceIn">isResourceIn</a></li>
         <li><a href="#isSubActivityOf">isSubActivityOf</a></li>
         <li><a href="#occupiesTimeInterval">occupiesTimeInterval</a></li>
     </ul>
@@ -619,8 +724,8 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="isResourceIn">
-        <h3>isResourceIn<sup title="object property" class="sup-op">op</sup></h3>
+    <div class="entity property" id="hasAssignedResource">
+        <h3>hasAssignedResource<sup title="object property" class="sup-op">op</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -635,7 +740,7 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isResourceIn1">isResourceIn</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isResourceIn">isResourceIn</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -681,6 +786,27 @@
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">dicv:Constraint</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasCostUnit">
+        <h3>hasCostUnit<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasCostUnit</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Resource">Resource</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Unit">dicv:Unit</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1143,12 +1269,6 @@
                 </td>
             </tr>
             <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
                 <th>Domain(s)</th>
                 <td>
                     <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
@@ -1206,12 +1326,6 @@
                 <th>Super-properties</th>
                 <td>
                     <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1315,7 +1429,7 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="isResourceIn1">
+    <div class="entity property" id="isResourceIn">
         <h3>isResourceIn<sup title="object property" class="sup-op">op</sup></h3>
         <table>
             <tr>
@@ -1326,12 +1440,6 @@
                 <th>Description</th>
                 <td>
                     The activity in whose execution this entity plays a resource role .
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isResourceIn">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1398,6 +1506,96 @@
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/0.5/Entities#TimeInterval">dice:TimeInterval</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="datatypeproperties">
+    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#hasActivityCost">hasActivityCost</a></li>
+        <li><a href="#hasUnitCost">hasUnitCost</a></li>
+        <li><a href="#hasUsageAmount">hasUsageAmount</a></li>
+    </ul>
+    <div class="entity property" id="hasActivityCost">
+        <h3>hasActivityCost<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasActivityCost</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The cost of an activity
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasUnitCost">
+        <h3>hasUnitCost<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasUnitCost</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The unit cost of a resource. Unit cost (e.g., 10€/m2), together with the information about cost unit (here, m2) and usage amount of expressed in cost units (e.g., 32) can be used to compute the total cost (here, 320€). Or if unit cost is 50€/hr and the cost unit is hr and usage amount 12, the total cost is 600€
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Resource">Resource</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasUsageAmount">
+        <h3>hasUsageAmount<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasUsageAmount</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The amount of resource usage in its resource role with respect to a specific activity. Usage amount can be related to the cost unit and unit cost of the resource. For example, 10 (hours of work as resource in activity1), 20 (kg of material spent in activity2)
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1494,7 +1692,59 @@
   <section id="namedindividuals">
     <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#hasActivityCost">hasActivityCost</a></li>
+        <li><a href="#hasUnitCost">hasUnitCost</a></li>
     </ul>
+    <div class="entity named_individual" id="hasActivityCost">
+        <h3>hasActivityCost<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/digitalconstruction/0.5/Processes#hasActivityCost
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">rdf:Property</a><br/>
+                <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The cost of an activity
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity named_individual" id="hasUnitCost">
+        <h3>hasUnitCost<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/digitalconstruction/0.5/Processes#hasUnitCost
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">rdf:Property</a><br/>
+                <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The unit cost of a resource. Unit cost (e.g., 10€/m2), together with the information about cost unit (here, m2) and usage amount of expressed in cost units (e.g., 32) can be used to compute the total cost (here, 320€). Or if unit cost is 50€/hr and the cost unit is hr and usage amount 12, the total cost is 600€
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
   
   <section id="namespaces">
