@@ -71,6 +71,14 @@
                 rdfs:label "actsOnProperty" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#actuates
+:actuates rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isActuatedBy ;
+          rdfs:domain dice:MaterialEntity ;
+          rdfs:range :Actuation ;
+          rdfs:label "actuates" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#hasAssignedResource
 :hasAssignedResource rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isResourceIn ;
@@ -194,6 +202,13 @@
                 rdfs:label "hasSubActivity" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#isActuatedBy
+:isActuatedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Actuation ;
+              rdfs:range dice:MaterialEntity ;
+              rdfs:label "isActuatedBy" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#isConditionOf
 :isConditionOf rdf:type owl:ObjectProperty ;
                rdfs:domain dicv:Constraint ;
@@ -243,6 +258,14 @@
                  rdfs:label "isObjectPhaseOf" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#isObservedBy
+:isObservedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :observes ;
+              rdfs:domain :Observation ;
+              rdfs:range dice:MaterialEntity ;
+              rdfs:label "isObservedBy" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#isOccupiedByActivity
 :isOccupiedByActivity rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf dice:occupiesTemporalRegion ;
@@ -282,6 +305,13 @@
                  rdfs:domain :Activity ;
                  rdfs:range :Activity ;
                  rdfs:label "isSubActivityOf" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#observes
+:observes rdf:type owl:ObjectProperty ;
+          rdfs:domain dice:MaterialEntity ;
+          rdfs:range :Observation ;
+          rdfs:label "observes" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#occupiesTimeInterval
@@ -348,6 +378,26 @@
            rdfs:label "Actuation" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#AutomatedActuation
+:AutomatedActuation rdf:type owl:Class ;
+                    rdfs:subClassOf :Actuation ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :isActuatedBy ;
+                                      owl:allValuesFrom dice:Actuator
+                                    ] ;
+                    rdfs:label "AutomatedActuation" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#AutomatedObservation
+:AutomatedObservation rdf:type owl:Class ;
+                      rdfs:subClassOf :Observation ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :isObservedBy ;
+                                        owl:allValuesFrom dice:Sensor
+                                      ] ;
+                      rdfs:label "AutomatedObservation" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#BehaviorProcess
 :BehaviorProcess rdf:type owl:Class ;
                  rdfs:subClassOf dice:Process ;
@@ -367,6 +417,13 @@
                      rdfs:label "ConstructionProject" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#CostItem
+:CostItem rdf:type owl:Class ;
+          rdfs:subClassOf dice:Group ;
+          rdfs:comment "A group of entities (including physical entities, information entities and activities) whose costs are controlled as one whole. The cost associated with a cost item is an aggregation (sum) of the costs of its members and included cost items" ;
+          rdfs:label "CostItem" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#CostProperty
 :CostProperty rdf:type owl:Class ;
               rdfs:subClassOf dicv:QuantitativeProperty ;
@@ -378,6 +435,13 @@
              rdfs:subClassOf :Activity ;
              rdfs:comment "A process of capturing information about some property of a feature of interest." ;
              rdfs:label "Observation" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#ProcurementPackage
+:ProcurementPackage rdf:type owl:Class ;
+                    rdfs:subClassOf dice:Group ;
+                    rdfs:comment "A group of entities (including physical entities, information entities, and activities) that are procured as one whole" ;
+                    rdfs:label "ProcurementPackage" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#Project
@@ -415,13 +479,9 @@
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#ResourceRole
 :ResourceRole rdf:type owl:Class ;
-              rdfs:subClassOf :Role ;
+              rdfs:subClassOf dice:Role ;
               rdfs:comment "A role in which an entity acts as a resource in an activity" ;
               rdfs:label "ResourceRole" .
-
-
-###  https://w3id.org/digitalconstruction/0.5/Processes#Role
-:Role rdf:type owl:Class .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#Service
@@ -429,6 +489,13 @@
          rdfs:subClassOf dice:Process ;
          rdfs:comment "A process in which service providers perform functions in response to requests of service requestors." ;
          rdfs:label "Service" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#Shipment
+:Shipment rdf:type owl:Class ;
+          rdfs:subClassOf dice:Group ;
+          rdfs:comment "A group of entities (including physical entities and information entities) that are transported and delivered as one whole" ;
+          rdfs:label "Shipment" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#UnitCost
