@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Digital Construction Processes</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    
-    <style>
-        #pylode {
+ <head>
+  <title>
+   Digital Construction Processes
+  </title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style>
+   #pylode {
             position: fixed;
             top: 130px;
             left: -60px;
@@ -184,10 +185,9 @@
             color: #336;
             text-decoration: none;
         }
-    </style>
-    
-    <script type="application/ld+json">
-      [
+  </style>
+  <script type="application/ld+json">
+   [
   {
     "@id": "https://w3id.org/digitalconstruction/0.5/Processes",
     "@type": [
@@ -210,1801 +210,4715 @@
     ]
   }
 ]
-    </script>
-</head>
-<body>
-  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
-    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.8.5</span>
+  </script>
+ </head>
+ <body>
+  <div id="pylode">
+   made by
+   <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">
+     p
+    </span>
+    <span style="color:#f9cb33;">
+     y
+    </span>
+    LODE
+   </a>
+   <span style="font-size:smaller;">
+    2.8.5
+   </span>
   </div>
-  <h1>Digital Construction Processes</h1>
-<section id="metadata">
-    <h2 style="display:none;">Metadata</h2>
-    <dl>
-        <dt>URI</dt>
-        <dd><code>https://w3id.org/digitalconstruction/0.5/Processes</code></dd>
-        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">Creator</a>(s)</dt>
-        <dd>
-            Seppo Törmä<br/>
-            Yuan Zheng<br/>
-        </dd>
-        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
-        <dd>2019-12-20</dd>
-        <dt>Imports</dt>
-        <dd>
-            <a href="https://w3id.org/digitalconstruction/0.5/Entities/entities.ttl">https://w3id.org/digitalconstruction/0.5/Entities/entities.ttl</a><br/>
-        </dd>
-        <dt>License</dt>
-        <dd><a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></dd>
-        <dt>Ontology RDF</dt>
-        <dd><a href="processes.ttl">RDF (turtle)</a></dd>
-    </dl>
-    <h2>Description</h2>
-    <div id="description">
-        <p>Process ontology for digital construction</p>
-    </div>
-</section>
-<section id="toc">
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#objectproperties">Object Properties</a></li>
-        <li><a href="#datatypeproperties">Datatype Properties</a></li>
-        <li><a href="#annotationproperties">Annotation Properties</a></li>
-        <li><a href="#namedindividuals">Named Individuals</a></li>
-        <li><a href="#namespaces">Namespaces</a></li>
-        <li><a href="#legend">Legend</a></li>
-    </ol>
-</section>
-<section id="overview">
-    <h2>Overview</h2>
-    <div class="figure">
-        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
-    </div>
-</section>
-  <section id="classes">
-    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#Activity">Activity</a></li>
-        <li><a href="#ActivityCost">ActivityCost</a></li>
-        <li><a href="#Actuation">Actuation</a></li>
-        <li><a href="#AutomatedActuation">AutomatedActuation</a></li>
-        <li><a href="#AutomatedObservation">AutomatedObservation</a></li>
-        <li><a href="#BehaviorProcess">BehaviorProcess</a></li>
-        <li><a href="#CapabilityConstraint">CapabilityConstraint</a></li>
-        <li><a href="#ConstructionProject">ConstructionProject</a></li>
-        <li><a href="#CostItem">CostItem</a></li>
-        <li><a href="#CostProperty">CostProperty</a></li>
-        <li><a href="#Observation">Observation</a></li>
-        <li><a href="#ProcurementPackage">ProcurementPackage</a></li>
-        <li><a href="#Project">Project</a></li>
-        <li><a href="#RenovationProject">RenovationProject</a></li>
-        <li><a href="#Resource">Resource</a></li>
-        <li><a href="#ResourceCost">ResourceCost</a></li>
-        <li><a href="#ResourceRole">ResourceRole</a></li>
-        <li><a href="#Service">Service</a></li>
-        <li><a href="#Shipment">Shipment</a></li>
-        <li><a href="#UnitCost">UnitCost</a></li>
-    </ul>
-    <div class="entity class" id="Activity">
-        <h3>Activity<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Activity</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A process that is intentionally performed by an agent.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Process">dice:Process</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Project">Project</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Actuation">Actuation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#hasEffect">hasEffect</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#occupiesTimeInterval">occupiesTimeInterval</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasActivityCost">hasActivityCost</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasLocation">hasLocation</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasOutputObject">hasOutputObject</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObject">hasObject</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasAssignedResource">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasCondition">hasCondition</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasInputObject">hasInputObject</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasProcessPhase">hasProcessPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isInputObjectIn">isInputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isResourceIn">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isConditionOf">isConditionOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isEffectOf">isEffectOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isOutputObjectIn">isOutputObjectIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObjectPhase">hasObjectPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isOccupiedByActivity">isOccupiedByActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasLocationPhase">hasLocationPhase</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ActivityCost">
-        <h3>ActivityCost<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ActivityCost</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CostProperty">CostProperty</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Actuation">
-        <h3>Actuation<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Actuation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A process of acting on some property of a feature of interest.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#AutomatedActuation">AutomatedActuation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#actsOnProperty">actsOnProperty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isActuatedBy">isActuatedBy</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#actuates">actuates</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="AutomatedActuation">
-        <h3>AutomatedActuation<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#AutomatedActuation</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Actuation">Actuation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Restrictions</th>
-                <td>
-                    <a href="#isActuatedBy">isActuatedBy</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="https://w3id.org/digitalconstruction/0.5/Entities#Actuator">dice:Actuator</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="AutomatedObservation">
-        <h3>AutomatedObservation<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#AutomatedObservation</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Restrictions</th>
-                <td>
-                    <a href="#isObservedBy">isObservedBy</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="https://w3id.org/digitalconstruction/0.5/Entities#Sensor">dice:Sensor</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="BehaviorProcess">
-        <h3>BehaviorProcess<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#BehaviorProcess</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A process in which the agent performs activities in reponse to stimuli.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Process">dice:Process</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="CapabilityConstraint">
-        <h3>CapabilityConstraint<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#CapabilityConstraint</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">dicv:Constraint</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ConstructionProject">
-        <h3>ConstructionProject<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ConstructionProject</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Project">Project</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#RenovationProject">RenovationProject</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="CostItem">
-        <h3>CostItem<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#CostItem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A group of entities (including physical entities, information entities and activities) whose costs are controlled as one whole. The cost associated with a cost item is an aggregation (sum) of the costs of its members and included cost items</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">dice:Group</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="CostProperty">
-        <h3>CostProperty<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#CostProperty</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#QuantitativeProperty">dicv:QuantitativeProperty</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#ActivityCost">ActivityCost</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ResourceCost">ResourceCost</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Observation">
-        <h3>Observation<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Observation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A process of capturing information about some property of a feature of interest.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#AutomatedObservation">AutomatedObservation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#hasObservedProperty">hasObservedProperty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObservedResult">hasObservedResult</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isObservedBy">isObservedBy</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#observes">observes</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ProcurementPackage">
-        <h3>ProcurementPackage<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ProcurementPackage</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A group of entities (including physical entities, information entities, and activities) that are procured as one whole</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">dice:Group</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Project">
-        <h3>Project<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Project</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A ObjectActivity with specific goals</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#ConstructionProject">ConstructionProject</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="RenovationProject">
-        <h3>RenovationProject<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#RenovationProject</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#ConstructionProject">ConstructionProject</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Resource">
-        <h3>Resource<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Resource</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Resource is any entity that plays a ResourceRole</p>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#hasUnitCost">hasUnitCost</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasCostUnit">hasCostUnit</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ResourceCost">
-        <h3>ResourceCost<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ResourceCost</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CostProperty">CostProperty</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#UnitCost">UnitCost</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ResourceRole">
-        <h3>ResourceRole<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#ResourceRole</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A role in which an entity acts as a resource in an activity</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Role">dice:Role</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#hasUsageAmount">hasUsageAmount</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#isResourceIn">isResourceIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#hasAssignedResource">hasAssignedResource</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Service">
-        <h3>Service<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Service</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A process in which service providers perform functions in response to requests of service requestors.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Process">dice:Process</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Shipment">
-        <h3>Shipment<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#Shipment</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A group of entities (including physical entities and information entities) that are transported and delivered as one whole</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">dice:Group</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="UnitCost">
-        <h3>UnitCost<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#UnitCost</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#ResourceCost">ResourceCost</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-<section id="objectproperties">
-    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#actsOnProperty">actsOnProperty</a></li>
-        <li><a href="#actuates">actuates</a></li>
-        <li><a href="#hasAssignedResource">hasAssignedResource</a></li>
-        <li><a href="#hasCondition">hasCondition</a></li>
-        <li><a href="#hasCostUnit">hasCostUnit</a></li>
-        <li><a href="#hasEffect">hasEffect</a></li>
-        <li><a href="#hasInputObject">hasInputObject</a></li>
-        <li><a href="#hasLocation">hasLocation</a></li>
-        <li><a href="#hasLocationPhase">hasLocationPhase</a></li>
-        <li><a href="#hasObject">hasObject</a></li>
-        <li><a href="#hasObjectPhase">hasObjectPhase</a></li>
-        <li><a href="#hasObservedProperty">hasObservedProperty</a></li>
-        <li><a href="#hasObservedResult">hasObservedResult</a></li>
-        <li><a href="#hasOutputObject">hasOutputObject</a></li>
-        <li><a href="#hasProcessPhase">hasProcessPhase</a></li>
-        <li><a href="#hasSubActivity">hasSubActivity</a></li>
-        <li><a href="#isActuatedBy">isActuatedBy</a></li>
-        <li><a href="#isConditionOf">isConditionOf</a></li>
-        <li><a href="#isEffectOf">isEffectOf</a></li>
-        <li><a href="#isInputObjectIn">isInputObjectIn</a></li>
-        <li><a href="#isLocationPhaseOf">isLocationPhaseOf</a></li>
-        <li><a href="#isObjectIn">isObjectIn</a></li>
-        <li><a href="#isObjectPhaseOf">isObjectPhaseOf</a></li>
-        <li><a href="#isObservedBy">isObservedBy</a></li>
-        <li><a href="#isOccupiedByActivity">isOccupiedByActivity</a></li>
-        <li><a href="#isOutputObjectIn">isOutputObjectIn</a></li>
-        <li><a href="#isProcessPhaseOf">isProcessPhaseOf</a></li>
-        <li><a href="#isResourceIn">isResourceIn</a></li>
-        <li><a href="#isSubActivityOf">isSubActivityOf</a></li>
-        <li><a href="#observes">observes</a></li>
-        <li><a href="#occupiesTimeInterval">occupiesTimeInterval</a></li>
-    </ul>
-    <div class="entity property" id="actsOnProperty">
-        <h3>actsOnProperty<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#actsOnProperty</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Actuation">Actuation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Property">dicv:Property</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="actuates">
-        <h3>actuates<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#actuates</code></td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isActuatedBy">isActuatedBy</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">dice:MaterialEntity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Actuation">Actuation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasAssignedResource">
-        <h3>hasAssignedResource<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasAssignedResource</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The resource role that is assigned to this activity.
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isResourceIn">isResourceIn</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasCondition">
-        <h3>hasCondition<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasCondition</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The constraint that has to be in effect at the start of the activity. E.g., the agent has to be in the location of the activity
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isConditionOf">isConditionOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">dicv:Constraint</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasCostUnit">
-        <h3>hasCostUnit<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasCostUnit</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Resource">Resource</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Unit">dicv:Unit</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasEffect">
-        <h3>hasEffect<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasEffect</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The constraint that has to be in effect in the end of the activity. E.g., the moved item has to be in the target location of the activity
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isEffectOf">isEffectOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasInputObject">
-        <h3>hasInputObject<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasInputObject</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The subproperty of :hasObject. An object that an activity has in the beginning but not anymore in the end. For example, demolition has as its input object a building.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#hasObject">hasObject</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isInputObjectIn">isInputObjectIn</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasLocation">
-        <h3>hasLocation<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasLocation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The location in which the activity happens. Can be a trajectory if the activity does not stay in the same location
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Location">dice:Location</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasLocationPhase">
-        <h3>hasLocationPhase<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasLocationPhase</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    A subproperty of :hasSubActivity. A subactivity that corresponds to a location-specific phase. 
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isLocationPhaseOf">isLocationPhaseOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasObject">
-        <h3>hasObject<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasObject</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The object that an activity acts on or is focused to. For example, a transportation activity can have as its object a container, or painting can have as its object a wall.
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasObjectPhase">
-        <h3>hasObjectPhase<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasObjectPhase</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    A subproperty of :hasSubActivity. A subactivity that corresponds to an object-specific phase. 
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isObjectPhaseOf">isObjectPhaseOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasObservedProperty">
-        <h3>hasObservedProperty<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasObservedProperty</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Property">dicv:Property</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasObservedResult">
-        <h3>hasObservedResult<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasObservedResult</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#QuantitativeState">dicv:QuantitativeState</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasOutputObject">
-        <h3>hasOutputObject<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasOutputObject</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The subproperty of :hasObject. An object that an activity has in the end even though it didn't have it in the beginning. For example, procurement has its output object a purchased product.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#hasObject">hasObject</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isOutputObjectIn">isOutputObjectIn</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasProcessPhase">
-        <h3>hasProcessPhase<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasProcessPhase</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    A subproperty of :hasSubActivity. A subactivity that corresponds to a phase in the process. 
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#hasSubActivity">hasSubActivity</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isProcessPhaseOf">isProcessPhaseOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasSubActivity">
-        <h3>hasSubActivity<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasSubActivity</code></td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#hasProperOccurrentPart">dice:hasProperOccurrentPart</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isActuatedBy">
-        <h3>isActuatedBy<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isActuatedBy</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Actuation">Actuation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">dice:MaterialEntity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isConditionOf">
-        <h3>isConditionOf<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isConditionOf</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">dicv:Constraint</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isEffectOf">
-        <h3>isEffectOf<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isEffectOf</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">dicv:Constraint</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isInputObjectIn">
-        <h3>isInputObjectIn<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isInputObjectIn</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The subproperty of :isObjectIn. An activity that has the object in the beginning but not anymore in the end. For example, building is the input object in demolition.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isLocationPhaseOf">
-        <h3>isLocationPhaseOf<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isLocationPhaseOf</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    A subproperty of :isSubActivityOf. A activity whose location-specific phase this activity is.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isObjectIn">
-        <h3>isObjectIn<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isObjectIn</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The activity that acts on the object. For example, a shipment is the object of transportation.
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isObjectPhaseOf">
-        <h3>isObjectPhaseOf<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isObjectPhaseOf</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    A subproperty of :isSubActivityOf. A activity whose object-specific phase this activity is.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isObservedBy">
-        <h3>isObservedBy<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isObservedBy</code></td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#observes">observes</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">dice:MaterialEntity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isOccupiedByActivity">
-        <h3>isOccupiedByActivity<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isOccupiedByActivity</code></td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#occupiesTemporalRegion">dice:occupiesTemporalRegion</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#occupiesTimeInterval">occupiesTimeInterval</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#TimeInterval">dice:TimeInterval</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isOutputObjectIn">
-        <h3>isOutputObjectIn<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isOutputObjectIn</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The subproperty :isObjectIn. An activity that has the object in the end even though it didn't have it in the beginning. For example, a purchased product is an output object of procurement.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#isObjectIn">isObjectIn</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isProcessPhaseOf">
-        <h3>isProcessPhaseOf<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isProcessPhaseOf</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The subproperty of :isSubActivityOf.
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#isSubActivityOf">isSubActivityOf</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isResourceIn">
-        <h3>isResourceIn<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isResourceIn</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The activity in whose execution this entity plays a resource role .
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="isSubActivityOf">
-        <h3>isSubActivityOf<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#isSubActivityOf</code></td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#properOccurrentPartOf">dice:properOccurrentPartOf</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="observes">
-        <h3>observes<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#observes</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">dice:MaterialEntity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="occupiesTimeInterval">
-        <h3>occupiesTimeInterval<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#occupiesTimeInterval</code></td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#occupiesTemporalRegion">dice:occupiesTemporalRegion</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#TimeInterval">dice:TimeInterval</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<section id="datatypeproperties">
-    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#hasActivityCost">hasActivityCost</a></li>
-        <li><a href="#hasUnitCost">hasUnitCost</a></li>
-        <li><a href="#hasUsageAmount">hasUsageAmount</a></li>
-    </ul>
-    <div class="entity property" id="hasActivityCost">
-        <h3>hasActivityCost<sup title="datatype property" class="sup-dp">dp</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasActivityCost</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The cost of an activity
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasUnitCost">
-        <h3>hasUnitCost<sup title="datatype property" class="sup-dp">dp</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasUnitCost</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The unit cost of a resource. Unit cost (e.g., 10€/m2), together with the information about cost unit (here, m2) and usage amount of expressed in cost units (e.g., 32) can be used to compute the total cost (here, 320€). Or if unit cost is 50€/hr and the cost unit is hr and usage amount 12, the total cost is 600€
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Resource">Resource</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasUsageAmount">
-        <h3>hasUsageAmount<sup title="datatype property" class="sup-dp">dp</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Processes#hasUsageAmount</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The amount of resource usage in its resource role with respect to a specific activity. Usage amount can be related to the cost unit and unit cost of the resource. For example, 10 (hours of work as resource in activity1), 20 (kg of material spent in activity2)
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#ResourceRole">ResourceRole</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<section id="annotationproperties">
-    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#date">date</a></li>
-        <li><a href="#title">title</a></li>
-        <li><a href="#abstract">abstract</a></li>
-        <li><a href="#created">created</a></li>
-        <li><a href="#description">description</a></li>
-        <li><a href="#license">license</a></li>
-        <li><a href="#preferredNamespacePrefix">preferredNamespacePrefix</a></li>
-        <li><a href="#preferredNamespaceUri">preferredNamespaceUri</a></li>
-    </ul>
-    <div class="entity property" id="date">
-        <h3>date<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/dc/elements/1.1/date</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="title">
-        <h3>title<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/dc/elements/1.1/title</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="abstract">
-        <h3>abstract<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/dc/terms/abstract</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="created">
-        <h3>created<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/dc/terms/created</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="description">
-        <h3>description<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/dc/terms/description</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="license">
-        <h3>license<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/dc/terms/license</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="preferredNamespacePrefix">
-        <h3>preferredNamespacePrefix<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/vocab/vann/preferredNamespacePrefix</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="preferredNamespaceUri">
-        <h3>preferredNamespaceUri<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://purl.org/vocab/vann/preferredNamespaceUri</code></td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-  
-  <section id="namedindividuals">
-    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#hasActivityCost">hasActivityCost</a></li>
-        <li><a href="#hasUnitCost">hasUnitCost</a></li>
-    </ul>
-    <div class="entity named_individual" id="hasActivityCost">
-        <h3>hasActivityCost<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      https://w3id.org/digitalconstruction/0.5/Processes#hasActivityCost
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a><br/>
-                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">rdf:Property</a><br/>
-            </dd>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The cost of an activity
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity named_individual" id="hasUnitCost">
-        <h3>hasUnitCost<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      https://w3id.org/digitalconstruction/0.5/Processes#hasUnitCost
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a><br/>
-                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">rdf:Property</a><br/>
-            </dd>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The unit cost of a resource. Unit cost (e.g., 10€/m2), together with the information about cost unit (here, m2) and usage amount of expressed in cost units (e.g., 32) can be used to compute the total cost (here, 320€). Or if unit cost is 50€/hr and the cost unit is hr and usage amount 12, the total cost is 600€
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-  
-  <section id="namespaces">
-    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <dl>
-        <dt>:</dt>
-        <dd><code>https://w3id.org/digitalconstruction/0.5/Processes#</code></dd>
-        <dt>dice</dt>
-        <dd><code>https://w3id.org/digitalconstruction/0.5/Entities#</code></dd>
-        <dt>dicv</dt>
-        <dd><code>https://w3id.org/digitalconstruction/0.5/Variables#</code></dd>
-        <dt>obda</dt>
-        <dd><code>https://w3id.org/obda/vocabulary#</code></dd>
-        <dt>owl</dt>
-        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
-        <dt>prov</dt>
-        <dd><code>http://www.w3.org/ns/prov#</code></dd>
-        <dt>rdf</dt>
-        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
-        <dt>rdfs</dt>
-        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
-        <dt>sdo</dt>
-        <dd><code>https://schema.org/</code></dd>
-        <dt>skos</dt>
-        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
-        <dt>xsd</dt>
-        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
-    </dl>
-</section>
-  <section id="legend">
-      <h2>Legend</h2>
-      <table class="entity">
-          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
-          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
-          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
-          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
-          <tr><td><sup class="sup-ap" title="Annotation Properties">dp</sup></td><td>Annotation Properties</td></tr>
-          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
-          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
-      </table>
+  <h1>
+   Digital Construction Processes
+  </h1>
+  <section id="metadata">
+   <h2 style="display:none;">
+    Metadata
+   </h2>
+   <dl>
+    <dt>
+     URI
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/digitalconstruction/0.5/Processes
+     </code>
+    </dd>
+    <dt>
+     <a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">
+      Creator
+     </a>
+     (s)
+    </dt>
+    <dd>
+     Seppo Törmä
+     <br/>
+     Yuan Zheng
+     <br/>
+    </dd>
+    <dt>
+     <a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">
+      Created
+     </a>
+    </dt>
+    <dd>
+     2019-12-20
+    </dd>
+    <dt>
+     Imports
+    </dt>
+    <dd>
+     <a href="https://w3id.org/digitalconstruction/0.5/Entities/entities.ttl">
+      https://w3id.org/digitalconstruction/0.5/Entities/entities.ttl
+     </a>
+     <br/>
+    </dd>
+    <dt>
+     License
+    </dt>
+    <dd>
+     <a href="https://creativecommons.org/licenses/by/4.0/">
+      https://creativecommons.org/licenses/by/4.0/
+     </a>
+    </dd>
+    <dt>
+     Ontology RDF
+    </dt>
+    <dd>
+     <a href="processes.ttl">
+      RDF (turtle)
+     </a>
+    </dd>
+   </dl>
+   <h2>
+    Description
+   </h2>
+   <div id="description">
+    <p>
+     Process ontology for digital construction
+    </p>
+   </div>
   </section>
-</body>
+  <section id="toc">
+   <h2>
+    Table of Contents
+   </h2>
+   <ol>
+    <li>
+     <a href="#classes">
+      Classes
+     </a>
+    </li>
+    <li>
+     <a href="#objectproperties">
+      Object Properties
+     </a>
+    </li>
+    <li>
+     <a href="#datatypeproperties">
+      Datatype Properties
+     </a>
+    </li>
+    <li>
+     <a href="#annotationproperties">
+      Annotation Properties
+     </a>
+    </li>
+    <li>
+     <a href="#namedindividuals">
+      Named Individuals
+     </a>
+    </li>
+    <li>
+     <a href="#namespaces">
+      Namespaces
+     </a>
+    </li>
+    <li>
+     <a href="#legend">
+      Legend
+     </a>
+    </li>
+   </ol>
+  </section>
+  <section id="overview">
+   <h2>
+    Overview
+   </h2>
+   <p>
+    The Digital Construction Processes defines the main subclasses of processes
+(
+    <tt>
+     dice:Process
+    </tt>
+    ): activities (
+    <tt>
+     dicp:Activity
+    </tt>
+    ), behavior
+process (
+    <tt>
+     dicp:BehaviorProcess
+    </tt>
+    ) and service
+(
+    <tt>
+     dicp:Service
+    </tt>
+    ). Activities represent discrete intentional processes
+with a start and end time, with instances ranging from projects and
+phases to construction tasks. Behavior processes are ongoing processes dealing,
+for instance, with occupants behavior. Services are ongoing processes
+that interact with clients.
+   </p>
+  </section>
+  <section id="classes">
+   <h2>
+    Classes
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &amp;uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#Activity">
+      Activity
+     </a>
+    </li>
+    <li>
+     <a href="#ActivityCost">
+      ActivityCost
+     </a>
+    </li>
+    <li>
+     <a href="#Actuation">
+      Actuation
+     </a>
+    </li>
+    <li>
+     <a href="#AutomatedActuation">
+      AutomatedActuation
+     </a>
+    </li>
+    <li>
+     <a href="#AutomatedObservation">
+      AutomatedObservation
+     </a>
+    </li>
+    <li>
+     <a href="#BehaviorProcess">
+      BehaviorProcess
+     </a>
+    </li>
+    <li>
+     <a href="#CapabilityConstraint">
+      CapabilityConstraint
+     </a>
+    </li>
+    <li>
+     <a href="#CapabilityToUse">
+      CapabilityToUse
+     </a>
+    </li>
+    <li>
+     <a href="#CapabilityToWork">
+      CapabilityToWork
+     </a>
+    </li>
+    <li>
+     <a href="#ConstructionProject">
+      ConstructionProject
+     </a>
+    </li>
+    <li>
+     <a href="#CostItem">
+      CostItem
+     </a>
+    </li>
+    <li>
+     <a href="#CostProperty">
+      CostProperty
+     </a>
+    </li>
+    <li>
+     <a href="#Observation">
+      Observation
+     </a>
+    </li>
+    <li>
+     <a href="#ProcurementPackage">
+      ProcurementPackage
+     </a>
+    </li>
+    <li>
+     <a href="#ProductionRate">
+      ProductionRate
+     </a>
+    </li>
+    <li>
+     <a href="#Project">
+      Project
+     </a>
+    </li>
+    <li>
+     <a href="#RenovationProject">
+      RenovationProject
+     </a>
+    </li>
+    <li>
+     <a href="#Resource">
+      Resource
+     </a>
+    </li>
+    <li>
+     <a href="#ResourceCost">
+      ResourceCost
+     </a>
+    </li>
+    <li>
+     <a href="#ResourceRole">
+      ResourceRole
+     </a>
+    </li>
+    <li>
+     <a href="#Service">
+      Service
+     </a>
+    </li>
+    <li>
+     <a href="#Shipment">
+      Shipment
+     </a>
+    </li>
+    <li>
+     <a href="#UnitCost">
+      UnitCost
+     </a>
+    </li>
+   </ul>
+   <div class="entity class" id="Activity">
+    <h3>
+     Activity
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Activity
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A process that is intentionally performed by an agent.
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Process">
+        dice:Process
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#Actuation">
+        Actuation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Project">
+        Project
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Observation">
+        Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasAssignedResource">
+        hasAssignedResource
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasObject">
+        hasObject
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasCondition">
+        hasCondition
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasActivityCost">
+        hasActivityCost
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <br/>
+       <a href="#hasProcessPhase">
+        hasProcessPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#needsCapability">
+        needsCapability
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasOutputObject">
+        hasOutputObject
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasObjectPhase">
+        hasObjectPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isObjectPhaseOf">
+        isObjectPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasLocation">
+        hasLocation
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasEffect">
+        hasEffect
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#occupiesTimeInterval">
+        occupiesTimeInterval
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasLocationPhase">
+        hasLocationPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasInputObject">
+        hasInputObject
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasSubActivity">
+        hasSubActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isLocationPhaseOf">
+        isLocationPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#isLocationPhaseOf">
+        isLocationPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isOutputObjectIn">
+        isOutputObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isOccupiedByActivity">
+        isOccupiedByActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isObjectIn">
+        isObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isNeededByActivity">
+        isNeededByActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isEffectOf">
+        isEffectOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isResourceIn">
+        isResourceIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isObjectPhaseOf">
+        isObjectPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isConditionOf">
+        isConditionOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isInputObjectIn">
+        isInputObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasProcessPhase">
+        hasProcessPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasLocationPhase">
+        hasLocationPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasSubActivity">
+        hasSubActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasObjectPhase">
+        hasObjectPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="ActivityCost">
+    <h3>
+     ActivityCost
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#ActivityCost
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#CostProperty">
+        CostProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Actuation">
+    <h3>
+     Actuation
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Actuation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A process of acting on some property of a feature of interest.
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#AutomatedActuation">
+        AutomatedActuation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#actsOnProperty">
+        actsOnProperty
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isActuatedBy">
+        isActuatedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#actuates">
+        actuates
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="AutomatedActuation">
+    <h3>
+     AutomatedActuation
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#AutomatedActuation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Actuation">
+        Actuation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="#isActuatedBy">
+        isActuatedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Actuator">
+        dice:Actuator
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="AutomatedObservation">
+    <h3>
+     AutomatedObservation
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#AutomatedObservation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Observation">
+        Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="#isObservedBy">
+        isObservedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Sensor">
+        dice:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="BehaviorProcess">
+    <h3>
+     BehaviorProcess
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#BehaviorProcess
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A process in which the agent performs activities in reponse to stimuli.
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Process">
+        dice:Process
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="CapabilityConstraint">
+    <h3>
+     CapabilityConstraint
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#CapabilityConstraint
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">
+        dicv:Constraint
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="CapabilityToUse">
+    <h3>
+     CapabilityToUse
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#CapabilityToUse
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">
+        dice:Capability
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="CapabilityToWork">
+    <h3>
+     CapabilityToWork
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#CapabilityToWork
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">
+        dice:Capability
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasProductionRate">
+        hasProductionRate
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="ConstructionProject">
+    <h3>
+     ConstructionProject
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#ConstructionProject
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Project">
+        Project
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#RenovationProject">
+        RenovationProject
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="CostItem">
+    <h3>
+     CostItem
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#CostItem
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A group of entities (including physical entities, information entities and activities) whose costs are controlled as one whole. The cost associated with a cost item is an aggregation (sum) of the costs of its members and included cost items
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">
+        dice:Group
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="CostProperty">
+    <h3>
+     CostProperty
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#CostProperty
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#QuantitativeProperty">
+        dicv:QuantitativeProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#ActivityCost">
+        ActivityCost
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#ResourceCost">
+        ResourceCost
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Observation">
+    <h3>
+     Observation
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Observation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A process of capturing information about some property of a feature of interest.
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#AutomatedObservation">
+        AutomatedObservation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasObservedResult">
+        hasObservedResult
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasObservedProperty">
+        hasObservedProperty
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isObservedBy">
+        isObservedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#observes">
+        observes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="ProcurementPackage">
+    <h3>
+     ProcurementPackage
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#ProcurementPackage
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A group of entities (including physical entities, information entities, and activities) that are procured as one whole
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">
+        dice:Group
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="ProductionRate">
+    <h3>
+     ProductionRate
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#ProductionRate
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#QuantitativeProperty">
+        dicv:QuantitativeProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#hasProductionRate">
+        hasProductionRate
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Project">
+    <h3>
+     Project
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Project
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A ObjectActivity with specific goals
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#ConstructionProject">
+        ConstructionProject
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="RenovationProject">
+    <h3>
+     RenovationProject
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#RenovationProject
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#ConstructionProject">
+        ConstructionProject
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Resource">
+    <h3>
+     Resource
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Resource
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        Resource is any entity that plays a ResourceRole
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasUnitCost">
+        hasUnitCost
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <br/>
+       <a href="#hasCostUnit">
+        hasCostUnit
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="ResourceCost">
+    <h3>
+     ResourceCost
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#ResourceCost
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#CostProperty">
+        CostProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#UnitCost">
+        UnitCost
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="ResourceRole">
+    <h3>
+     ResourceRole
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#ResourceRole
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A role in which an entity acts as a resource in an activity
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Role">
+        dice:Role
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasUsageAmount">
+        hasUsageAmount
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <br/>
+       <a href="#isResourceIn">
+        isResourceIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#hasAssignedResource">
+        hasAssignedResource
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Service">
+    <h3>
+     Service
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Service
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A process in which service providers perform functions in response to requests of service requestors.
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Process">
+        dice:Process
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Shipment">
+    <h3>
+     Shipment
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#Shipment
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A group of entities (including physical entities and information entities) that are transported and delivered as one whole
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">
+        dice:Group
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="UnitCost">
+    <h3>
+     UnitCost
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#UnitCost
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#ResourceCost">
+        ResourceCost
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="objectproperties">
+   <h2>
+    Object Properties
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &amp;uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#actsOnProperty">
+      actsOnProperty
+     </a>
+    </li>
+    <li>
+     <a href="#actuates">
+      actuates
+     </a>
+    </li>
+    <li>
+     <a href="#hasAssignedResource">
+      hasAssignedResource
+     </a>
+    </li>
+    <li>
+     <a href="#hasCondition">
+      hasCondition
+     </a>
+    </li>
+    <li>
+     <a href="#hasCostUnit">
+      hasCostUnit
+     </a>
+    </li>
+    <li>
+     <a href="#hasEffect">
+      hasEffect
+     </a>
+    </li>
+    <li>
+     <a href="#hasFinalLocation">
+      hasFinalLocation
+     </a>
+    </li>
+    <li>
+     <a href="#hasInitialLocation">
+      hasInitialLocation
+     </a>
+    </li>
+    <li>
+     <a href="#hasInputObject">
+      hasInputObject
+     </a>
+    </li>
+    <li>
+     <a href="#hasLocation">
+      hasLocation
+     </a>
+    </li>
+    <li>
+     <a href="#hasLocationPhase">
+      hasLocationPhase
+     </a>
+    </li>
+    <li>
+     <a href="#hasObject">
+      hasObject
+     </a>
+    </li>
+    <li>
+     <a href="#hasObjectPhase">
+      hasObjectPhase
+     </a>
+    </li>
+    <li>
+     <a href="#hasObservedProperty">
+      hasObservedProperty
+     </a>
+    </li>
+    <li>
+     <a href="#hasObservedResult">
+      hasObservedResult
+     </a>
+    </li>
+    <li>
+     <a href="#hasOutputObject">
+      hasOutputObject
+     </a>
+    </li>
+    <li>
+     <a href="#hasProcessPhase">
+      hasProcessPhase
+     </a>
+    </li>
+    <li>
+     <a href="#hasProductionRate">
+      hasProductionRate
+     </a>
+    </li>
+    <li>
+     <a href="#hasSubActivity">
+      hasSubActivity
+     </a>
+    </li>
+    <li>
+     <a href="#isActuatedBy">
+      isActuatedBy
+     </a>
+    </li>
+    <li>
+     <a href="#isConditionOf">
+      isConditionOf
+     </a>
+    </li>
+    <li>
+     <a href="#isEffectOf">
+      isEffectOf
+     </a>
+    </li>
+    <li>
+     <a href="#isInputObjectIn">
+      isInputObjectIn
+     </a>
+    </li>
+    <li>
+     <a href="#isLocationPhaseOf">
+      isLocationPhaseOf
+     </a>
+    </li>
+    <li>
+     <a href="#isNeededByActivity">
+      isNeededByActivity
+     </a>
+    </li>
+    <li>
+     <a href="#isObjectIn">
+      isObjectIn
+     </a>
+    </li>
+    <li>
+     <a href="#isObjectPhaseOf">
+      isObjectPhaseOf
+     </a>
+    </li>
+    <li>
+     <a href="#isObservedBy">
+      isObservedBy
+     </a>
+    </li>
+    <li>
+     <a href="#isOccupiedByActivity">
+      isOccupiedByActivity
+     </a>
+    </li>
+    <li>
+     <a href="#isOutputObjectIn">
+      isOutputObjectIn
+     </a>
+    </li>
+    <li>
+     <a href="#isProcessPhaseOf">
+      isProcessPhaseOf
+     </a>
+    </li>
+    <li>
+     <a href="#isResourceIn">
+      isResourceIn
+     </a>
+    </li>
+    <li>
+     <a href="#isSubActivityOf">
+      isSubActivityOf
+     </a>
+    </li>
+    <li>
+     <a href="#needsCapability">
+      needsCapability
+     </a>
+    </li>
+    <li>
+     <a href="#observes">
+      observes
+     </a>
+    </li>
+    <li>
+     <a href="#occupiesTimeInterval">
+      occupiesTimeInterval
+     </a>
+    </li>
+   </ul>
+   <div class="entity property" id="actsOnProperty">
+    <h3>
+     actsOnProperty
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#actsOnProperty
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Actuation">
+        Actuation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Property">
+        dicv:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="actuates">
+    <h3>
+     actuates
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#actuates
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isActuatedBy">
+        isActuatedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">
+        dice:MaterialEntity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Actuation">
+        Actuation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasAssignedResource">
+    <h3>
+     hasAssignedResource
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasAssignedResource
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The resource role that is assigned to this activity.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isResourceIn">
+        isResourceIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#ResourceRole">
+        ResourceRole
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasCondition">
+    <h3>
+     hasCondition
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasCondition
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The constraint that has to be in effect at the start of the activity. E.g., the agent has to be in the location of the activity
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isConditionOf">
+        isConditionOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">
+        dicv:Constraint
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasCostUnit">
+    <h3>
+     hasCostUnit
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasCostUnit
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Resource">
+        Resource
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Unit">
+        dicv:Unit
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasEffect">
+    <h3>
+     hasEffect
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasEffect
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The constraint that has to be in effect in the end of the activity. E.g., the moved item has to be in the target location of the activity
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="http://www.w3.org/2002/07/owl#topObjectProperty">
+        owl:topObjectProperty
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isEffectOf">
+        isEffectOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasFinalLocation">
+    <h3>
+     hasFinalLocation
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasFinalLocation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasLocation">
+        hasLocation
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasInitialLocation">
+    <h3>
+     hasInitialLocation
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasInitialLocation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasLocation">
+        hasLocation
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasInputObject">
+    <h3>
+     hasInputObject
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasInputObject
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The subproperty of :hasObject. An object that an activity has in the beginning but not anymore in the end. For example, demolition has as its input object a building.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasObject">
+        hasObject
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isInputObjectIn">
+        isInputObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">
+        dice:Entity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasLocation">
+    <h3>
+     hasLocation
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasLocation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The location in which the activity happens. Can be a trajectory if the activity does not stay in the same location
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Location">
+        dice:Location
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasLocationPhase">
+    <h3>
+     hasLocationPhase
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasLocationPhase
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A subproperty of :hasSubActivity. A subactivity that corresponds to a location-specific phase.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasSubActivity">
+        hasSubActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isLocationPhaseOf">
+        isLocationPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasObject">
+    <h3>
+     hasObject
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasObject
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The object that an activity acts on or is focused to. For example, a transportation activity can have as its object a container, or painting can have as its object a wall.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isObjectIn">
+        isObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">
+        dice:Entity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasObjectPhase">
+    <h3>
+     hasObjectPhase
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasObjectPhase
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A subproperty of :hasSubActivity. A subactivity that corresponds to an object-specific phase.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasSubActivity">
+        hasSubActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isObjectPhaseOf">
+        isObjectPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasObservedProperty">
+    <h3>
+     hasObservedProperty
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasObservedProperty
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Observation">
+        Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Property">
+        dicv:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasObservedResult">
+    <h3>
+     hasObservedResult
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasObservedResult
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Observation">
+        Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#QuantitativeState">
+        dicv:QuantitativeState
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasOutputObject">
+    <h3>
+     hasOutputObject
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasOutputObject
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The subproperty of :hasObject. An object that an activity has in the end even though it didn't have it in the beginning. For example, procurement has its output object a purchased product.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasObject">
+        hasObject
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isOutputObjectIn">
+        isOutputObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">
+        dice:Entity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasProcessPhase">
+    <h3>
+     hasProcessPhase
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasProcessPhase
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A subproperty of :hasSubActivity. A subactivity that corresponds to a phase in the process.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasSubActivity">
+        hasSubActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isProcessPhaseOf">
+        isProcessPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasProductionRate">
+    <h3>
+     hasProductionRate
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasProductionRate
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#CapabilityToWork">
+        CapabilityToWork
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#ProductionRate">
+        ProductionRate
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasSubActivity">
+    <h3>
+     hasSubActivity
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasSubActivity
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#hasProperOccurrentPart">
+        dice:hasProperOccurrentPart
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isActuatedBy">
+    <h3>
+     isActuatedBy
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isActuatedBy
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Actuation">
+        Actuation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">
+        dice:MaterialEntity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isConditionOf">
+    <h3>
+     isConditionOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isConditionOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">
+        dicv:Constraint
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isEffectOf">
+    <h3>
+     isEffectOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isEffectOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">
+        dicv:Constraint
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isInputObjectIn">
+    <h3>
+     isInputObjectIn
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isInputObjectIn
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The subproperty of :isObjectIn. An activity that has the object in the beginning but not anymore in the end. For example, building is the input object in demolition.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#isObjectIn">
+        isObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">
+        dice:Entity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isLocationPhaseOf">
+    <h3>
+     isLocationPhaseOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isLocationPhaseOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A subproperty of :isSubActivityOf. A activity whose location-specific phase this activity is.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isNeededByActivity">
+    <h3>
+     isNeededByActivity
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isNeededByActivity
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The activity that needs a capability from some of its ingredients
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#needsCapability">
+        needsCapability
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">
+        dice:Capability
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isObjectIn">
+    <h3>
+     isObjectIn
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isObjectIn
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The activity that acts on the object. For example, a shipment is the object of transportation.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">
+        dice:Entity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isObjectPhaseOf">
+    <h3>
+     isObjectPhaseOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isObjectPhaseOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A subproperty of :isSubActivityOf. A activity whose object-specific phase this activity is.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isObservedBy">
+    <h3>
+     isObservedBy
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isObservedBy
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#observes">
+        observes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Observation">
+        Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">
+        dice:MaterialEntity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isOccupiedByActivity">
+    <h3>
+     isOccupiedByActivity
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isOccupiedByActivity
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#occupiesTemporalRegion">
+        dice:occupiesTemporalRegion
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#occupiesTimeInterval">
+        occupiesTimeInterval
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#TimeInterval">
+        dice:TimeInterval
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isOutputObjectIn">
+    <h3>
+     isOutputObjectIn
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isOutputObjectIn
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The subproperty :isObjectIn. An activity that has the object in the end even though it didn't have it in the beginning. For example, a purchased product is an output object of procurement.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#isObjectIn">
+        isObjectIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">
+        dice:Entity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isProcessPhaseOf">
+    <h3>
+     isProcessPhaseOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isProcessPhaseOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The subproperty of :isSubActivityOf.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isResourceIn">
+    <h3>
+     isResourceIn
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isResourceIn
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The activity in whose execution this entity plays a resource role .
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#ResourceRole">
+        ResourceRole
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isSubActivityOf">
+    <h3>
+     isSubActivityOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#isSubActivityOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#properOccurrentPartOf">
+        dice:properOccurrentPartOf
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="needsCapability">
+    <h3>
+     needsCapability
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#needsCapability
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A capability that some ingredient of an activity needs to provided to make the execution of the activity possible.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">
+        dice:Capability
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="observes">
+    <h3>
+     observes
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#observes
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity">
+        dice:MaterialEntity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Observation">
+        Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="occupiesTimeInterval">
+    <h3>
+     occupiesTimeInterval
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#occupiesTimeInterval
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#occupiesTemporalRegion">
+        dice:occupiesTemporalRegion
+       </a>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#TimeInterval">
+        dice:TimeInterval
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="datatypeproperties">
+   <h2>
+    Datatype Properties
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &amp;uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#hasActivityCost">
+      hasActivityCost
+     </a>
+    </li>
+    <li>
+     <a href="#hasUnitCost">
+      hasUnitCost
+     </a>
+    </li>
+    <li>
+     <a href="#hasUsageAmount">
+      hasUsageAmount
+     </a>
+    </li>
+   </ul>
+   <div class="entity property" id="hasActivityCost">
+    <h3>
+     hasActivityCost
+     <sup class="sup-dp" title="datatype property">
+      dp
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasActivityCost
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The cost of an activity
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Activity">
+        Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="http://www.w3.org/2001/XMLSchema#decimal">
+        xsd:decimal
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasUnitCost">
+    <h3>
+     hasUnitCost
+     <sup class="sup-dp" title="datatype property">
+      dp
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasUnitCost
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The unit cost of a resource. Unit cost (e.g., 10€/m2), together with the information about cost unit (here, m2) and usage amount of expressed in cost units (e.g., 32) can be used to compute the total cost (here, 320€). Or if unit cost is 50€/hr and the cost unit is hr and usage amount 12, the total cost is 600€
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Resource">
+        Resource
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="http://www.w3.org/2001/XMLSchema#decimal">
+        xsd:decimal
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasUsageAmount">
+    <h3>
+     hasUsageAmount
+     <sup class="sup-dp" title="datatype property">
+      dp
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasUsageAmount
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The amount of resource usage in its resource role with respect to a specific activity. Usage amount can be related to the cost unit and unit cost of the resource. For example, 10 (hours of work as resource in activity1), 20 (kg of material spent in activity2)
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#ResourceRole">
+        ResourceRole
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="http://www.w3.org/2001/XMLSchema#decimal">
+        xsd:decimal
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="annotationproperties">
+   <h2>
+    Annotation Properties
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &amp;uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#date">
+      date
+     </a>
+    </li>
+    <li>
+     <a href="#title">
+      title
+     </a>
+    </li>
+    <li>
+     <a href="#abstract">
+      abstract
+     </a>
+    </li>
+    <li>
+     <a href="#created">
+      created
+     </a>
+    </li>
+    <li>
+     <a href="#description">
+      description
+     </a>
+    </li>
+    <li>
+     <a href="#license">
+      license
+     </a>
+    </li>
+    <li>
+     <a href="#preferredNamespacePrefix">
+      preferredNamespacePrefix
+     </a>
+    </li>
+    <li>
+     <a href="#preferredNamespaceUri">
+      preferredNamespaceUri
+     </a>
+    </li>
+   </ul>
+   <div class="entity property" id="date">
+    <h3>
+     date
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/dc/elements/1.1/date
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="title">
+    <h3>
+     title
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/dc/elements/1.1/title
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="abstract">
+    <h3>
+     abstract
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/dc/terms/abstract
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="created">
+    <h3>
+     created
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/dc/terms/created
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="description">
+    <h3>
+     description
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/dc/terms/description
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="license">
+    <h3>
+     license
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/dc/terms/license
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="preferredNamespacePrefix">
+    <h3>
+     preferredNamespacePrefix
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/vocab/vann/preferredNamespacePrefix
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="preferredNamespaceUri">
+    <h3>
+     preferredNamespaceUri
+     <sup class="sup-ap" title="annotation property">
+      ap
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        http://purl.org/vocab/vann/preferredNamespaceUri
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="namedindividuals">
+   <h2>
+    Named Individuals
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &amp;uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#hasActivityCost">
+      hasActivityCost
+     </a>
+    </li>
+    <li>
+     <a href="#hasUnitCost">
+      hasUnitCost
+     </a>
+    </li>
+   </ul>
+   <div class="entity named_individual" id="hasActivityCost">
+    <h3>
+     hasActivityCost
+     <sup class="sup-ni" title="named individual">
+      ni
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasActivityCost
+       </code>
+      </td>
+     </tr>
+     <dt>
+      Classes(s)
+     </dt>
+     <dd>
+      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+       rdf:Property
+      </a>
+      <br/>
+      <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">
+       owl:DatatypeProperty
+      </a>
+      <br/>
+     </dd>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The cost of an activity
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity named_individual" id="hasUnitCost">
+    <h3>
+     hasUnitCost
+     <sup class="sup-ni" title="named individual">
+      ni
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Processes#hasUnitCost
+       </code>
+      </td>
+     </tr>
+     <dt>
+      Classes(s)
+     </dt>
+     <dd>
+      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+       rdf:Property
+      </a>
+      <br/>
+      <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">
+       owl:DatatypeProperty
+      </a>
+      <br/>
+     </dd>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The unit cost of a resource. Unit cost (e.g., 10€/m2), together with the information about cost unit (here, m2) and usage amount of expressed in cost units (e.g., 32) can be used to compute the total cost (here, 320€). Or if unit cost is 50€/hr and the cost unit is hr and usage amount 12, the total cost is 600€
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="namespaces">
+   <h2>
+    Namespaces
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &amp;uparrow
+     </a>
+    </span>
+   </h2>
+   <dl>
+    <dt>
+     :
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/digitalconstruction/0.5/Processes#
+     </code>
+    </dd>
+    <dt>
+     dice
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/digitalconstruction/0.5/Entities#
+     </code>
+    </dd>
+    <dt>
+     dicv
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/digitalconstruction/0.5/Variables#
+     </code>
+    </dd>
+    <dt>
+     obda
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/obda/vocabulary#
+     </code>
+    </dd>
+    <dt>
+     owl
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2002/07/owl#
+     </code>
+    </dd>
+    <dt>
+     prov
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/ns/prov#
+     </code>
+    </dd>
+    <dt>
+     rdf
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/1999/02/22-rdf-syntax-ns#
+     </code>
+    </dd>
+    <dt>
+     rdfs
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2000/01/rdf-schema#
+     </code>
+    </dd>
+    <dt>
+     sdo
+    </dt>
+    <dd>
+     <code>
+      https://schema.org/
+     </code>
+    </dd>
+    <dt>
+     skos
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2004/02/skos/core#
+     </code>
+    </dd>
+    <dt>
+     xsd
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2001/XMLSchema#
+     </code>
+    </dd>
+   </dl>
+  </section>
+  <section id="legend">
+   <h2>
+    Legend
+   </h2>
+   <table class="entity">
+    <tr>
+     <td>
+      <sup class="sup-c" title="Classes">
+       c
+      </sup>
+     </td>
+     <td>
+      Classes
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-op" title="Object Properties">
+       op
+      </sup>
+     </td>
+     <td>
+      Object Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-fp" title="Functional Properties">
+       fp
+      </sup>
+     </td>
+     <td>
+      Functional Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-dp" title="Data Properties">
+       dp
+      </sup>
+     </td>
+     <td>
+      Data Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-ap" title="Annotation Properties">
+       dp
+      </sup>
+     </td>
+     <td>
+      Annotation Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-p" title="Properties">
+       p
+      </sup>
+     </td>
+     <td>
+      Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-ni" title="Named Individuals">
+       ni
+      </sup>
+     </td>
+     <td>
+      Named Individuals
+     </td>
+    </tr>
+   </table>
+  </section>
+ </body>
 </html>

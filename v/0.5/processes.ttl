@@ -112,6 +112,18 @@
            rdfs:label "hasEffect" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#hasFinalLocation
+:hasFinalLocation rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasLocation ;
+                  rdfs:label "hasFinalLocation" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#hasInitialLocation
+:hasInitialLocation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasLocation ;
+                    rdfs:label "hasInitialLocation" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#hasInputObject
 :hasInputObject rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasObject ;
@@ -193,6 +205,13 @@
                  rdfs:label "hasProcessPhase" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#hasProductionRate
+:hasProductionRate rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CapabilityToWork ;
+                   rdfs:range :ProductionRate ;
+                   rdfs:label "hasProductionRate" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#hasSubActivity
 :hasSubActivity rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf dice:hasProperOccurrentPart ;
@@ -239,6 +258,15 @@
                    rdfs:range :Activity ;
                    rdfs:comment "A subproperty of :isSubActivityOf. A activity whose location-specific phase this activity is." ;
                    rdfs:label "isLocationPhaseOf" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#isNeededByActivity
+:isNeededByActivity rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :needsCapability ;
+                    rdfs:domain dice:Capability ;
+                    rdfs:range :Activity ;
+                    rdfs:comment "The activity that needs a capability from some of its ingredients" ;
+                    rdfs:label "isNeededByActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#isObjectIn
@@ -305,6 +333,14 @@
                  rdfs:domain :Activity ;
                  rdfs:range :Activity ;
                  rdfs:label "isSubActivityOf" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#needsCapability
+:needsCapability rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Activity ;
+                 rdfs:range dice:Capability ;
+                 rdfs:comment "A capability that some ingredient of an activity needs to provided to make the execution of the activity possible." ;
+                 rdfs:label "needsCapability" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#observes
@@ -411,6 +447,18 @@
                       rdfs:label "CapabilityConstraint" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Processes#CapabilityToUse
+:CapabilityToUse rdf:type owl:Class ;
+                 rdfs:subClassOf dice:Capability ;
+                 rdfs:label "CapabilityToUse" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#CapabilityToWork
+:CapabilityToWork rdf:type owl:Class ;
+                  rdfs:subClassOf dice:Capability ;
+                  rdfs:label "CapabilityToWork" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Processes#ConstructionProject
 :ConstructionProject rdf:type owl:Class ;
                      rdfs:subClassOf :Project ;
@@ -442,6 +490,14 @@
                     rdfs:subClassOf dice:Group ;
                     rdfs:comment "A group of entities (including physical entities, information entities, and activities) that are procured as one whole" ;
                     rdfs:label "ProcurementPackage" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Processes#ProductionRate
+:ProductionRate rdf:type owl:Class ;
+                rdfs:subClassOf dicv:QuantitativeProperty ;
+		owl:equivalentClass [ a owl:Restriction ; owl:onProperty dicv:isPropertyFor ; owl:hasValue :hasProductionRate ] ;
+
+                rdfs:label "ProductionRate" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Processes#Project
