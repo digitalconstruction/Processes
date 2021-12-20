@@ -351,16 +351,16 @@
     <tt>
      dice:Process
     </tt>
-    ): activities (
+    ): Activity (
     <tt>
      dicp:Activity
     </tt>
-    ), behavior
+    ), Behavior
 process (
     <tt>
      dicp:BehaviorProcess
     </tt>
-    ) and service
+    ) and Service
 (
     <tt>
      dicp:Service
@@ -371,6 +371,14 @@ phases to construction tasks. Behavior processes are ongoing processes dealing,
 for instance, with occupants behavior. Services are ongoing processes
 that interact with clients.
    </p>
+   <p>
+    Activities are central entities in the management of construction and
+renovation projects as they have connection to a range of other
+entities as presented in the figure below.
+   </p>
+   <center>
+    <img src="processes-Page-6.drawio.svg" width="80%"/>
+   </center>
   </section>
   <section id="classes">
    <h2>
@@ -545,8 +553,8 @@ that interact with clients.
        Sub-classes
       </th>
       <td>
-       <a href="#Actuation">
-        Actuation
+       <a href="#Observation">
+        Observation
        </a>
        <sup class="sup-c" title="class">
         c
@@ -559,8 +567,8 @@ that interact with clients.
         c
        </sup>
        <br/>
-       <a href="#Observation">
-        Observation
+       <a href="#Actuation">
+        Actuation
        </a>
        <sup class="sup-c" title="class">
         c
@@ -573,29 +581,15 @@ that interact with clients.
        In domain of
       </th>
       <td>
-       <a href="#hasAssignedResource">
-        hasAssignedResource
+       <a href="#hasEffect">
+        hasEffect
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasObject">
-        hasObject
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isSubActivityOf">
-        isSubActivityOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasCondition">
-        hasCondition
+       <a href="#hasObjectPhase">
+        hasObjectPhase
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -615,8 +609,15 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#needsCapability">
-        needsCapability
+       <a href="#isLocationPhaseOf">
+        isLocationPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasCondition">
+        hasCondition
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -629,36 +630,8 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#hasObjectPhase">
-        hasObjectPhase
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isObjectPhaseOf">
-        isObjectPhaseOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasLocation">
-        hasLocation
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasEffect">
-        hasEffect
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#occupiesTimeInterval">
-        occupiesTimeInterval
+       <a href="#hasInputObject">
+        hasInputObject
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -671,8 +644,29 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#hasInputObject">
-        hasInputObject
+       <a href="#hasObject">
+        hasObject
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isObjectPhaseOf">
+        isObjectPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#occupiesTimeInterval">
+        occupiesTimeInterval
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasLocation">
+        hasLocation
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -685,8 +679,22 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#isLocationPhaseOf">
-        isLocationPhaseOf
+       <a href="#isSubActivityOf">
+        isSubActivityOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#needsCapability">
+        needsCapability
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasAssignedResource">
+        hasAssignedResource
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -699,8 +707,36 @@ that interact with clients.
        In range of
       </th>
       <td>
+       <a href="#isConditionOf">
+        isConditionOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasSubActivity">
+        hasSubActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasLocationPhase">
+        hasLocationPhase
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#isLocationPhaseOf">
         isLocationPhaseOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isNeededByActivity">
+        isNeededByActivity
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -713,13 +749,6 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#isOccupiedByActivity">
-        isOccupiedByActivity
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#isObjectIn">
         isObjectIn
        </a>
@@ -727,8 +756,8 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#isNeededByActivity">
-        isNeededByActivity
+       <a href="#isInputObjectIn">
+        isInputObjectIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -748,29 +777,8 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#isResourceIn">
-        isResourceIn
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isObjectPhaseOf">
-        isObjectPhaseOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isConditionOf">
-        isConditionOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isInputObjectIn">
-        isInputObjectIn
+       <a href="#hasObjectPhase">
+        hasObjectPhase
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -783,22 +791,22 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#hasLocationPhase">
-        hasLocationPhase
+       <a href="#isOccupiedByActivity">
+        isOccupiedByActivity
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasSubActivity">
-        hasSubActivity
+       <a href="#isResourceIn">
+        isResourceIn
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasObjectPhase">
-        hasObjectPhase
+       <a href="#isObjectPhaseOf">
+        isObjectPhaseOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -903,15 +911,15 @@ that interact with clients.
        In domain of
       </th>
       <td>
-       <a href="#actsOnProperty">
-        actsOnProperty
+       <a href="#isActuatedBy">
+        isActuatedBy
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#isActuatedBy">
-        isActuatedBy
+       <a href="#actsOnProperty">
+        actsOnProperty
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1417,8 +1425,8 @@ that interact with clients.
        In domain of
       </th>
       <td>
-       <a href="#hasObservedResult">
-        hasObservedResult
+       <a href="#isObservedBy">
+        isObservedBy
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1431,8 +1439,8 @@ that interact with clients.
         op
        </sup>
        <br/>
-       <a href="#isObservedBy">
-        isObservedBy
+       <a href="#hasObservedResult">
+        hasObservedResult
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1786,18 +1794,18 @@ that interact with clients.
        In domain of
       </th>
       <td>
-       <a href="#hasUsageAmount">
-        hasUsageAmount
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <br/>
        <a href="#isResourceIn">
         isResourceIn
        </a>
        <sup class="sup-op" title="object property">
         op
+       </sup>
+       <br/>
+       <a href="#hasUsageAmount">
+        hasUsageAmount
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
        </sup>
        <br/>
       </td>
@@ -4682,12 +4690,12 @@ that interact with clients.
       Classes(s)
      </dt>
      <dd>
-      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
-       rdf:Property
-      </a>
-      <br/>
       <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">
        owl:DatatypeProperty
+      </a>
+      <br/>
+      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+       rdf:Property
       </a>
       <br/>
      </dd>
@@ -4723,12 +4731,12 @@ that interact with clients.
       Classes(s)
      </dt>
      <dd>
-      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
-       rdf:Property
-      </a>
-      <br/>
       <a href="http://www.w3.org/2002/07/owl#DatatypeProperty">
        owl:DatatypeProperty
+      </a>
+      <br/>
+      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+       rdf:Property
       </a>
       <br/>
      </dd>
